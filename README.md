@@ -1,6 +1,11 @@
-# WeCanScrumIt2
+# Re-Buy-Cycling
 
-TEST!!
+## How To Run:
+- clone the repo
+- cd into `client`
+- run `npm install` 
 
-change for DW
+- run backend in intelliJ at `localhost:8080`
+- run client code with `npm start` at `localhost:1234`
+
 
