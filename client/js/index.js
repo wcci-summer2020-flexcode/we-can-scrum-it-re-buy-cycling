@@ -25,7 +25,6 @@ function buildPage() {
   navBikes();
   navDonateMoney();
   checkAlert();
-
 }
 
 function header() {
