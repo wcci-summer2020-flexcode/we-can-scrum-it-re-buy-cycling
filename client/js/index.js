@@ -54,9 +54,33 @@ function navSupport() {
 
 function navDonateMoney() {
   const supportElm = document.querySelector(".nav-list_donate_money");
+  const app = document.querySelector("#app");
+
   supportElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
     app.innerHTML = DonateMoney();
+  });
+
+  // MODAL FUNCTIONALITY
+  app.addEventListener('click', () => {
+    if (event.target.classList.contains('donate-button')) {
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
   });
 }
 
@@ -75,6 +99,7 @@ function navHowItWorks() {
     app.innerHTML = HowItWorks();
   });
 }
+
 function navFAQ() {
   const faqElm = document.querySelector(".nav-list_faq");
   const app = document.querySelector("#app");

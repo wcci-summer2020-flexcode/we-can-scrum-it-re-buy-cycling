@@ -1,6 +1,3 @@
-
-
-
 var firstName = "";
 var lastName = "";
 var email = "";
@@ -46,3 +43,7 @@ $("input").on("change", function () {
     }
 
 });
+
+
+
+
