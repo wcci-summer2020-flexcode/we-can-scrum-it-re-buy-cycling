@@ -138,17 +138,26 @@ function renderBikeInfo() {
 function checkAlert(){
   const app = document.querySelector('#app');
   app.addEventListener('click', () => {
-    if(event.target.classList.contains('Check')) {
+    if(event.target.parentElement.classList.contains('Check')) {
       console.log(event.target);
       const checkboxColumbus = event.target.parentElement.querySelector('#Columbus')
+      const checkboxMale =event.target.parentElement.querySelector('#Male')
+      const checkboxAge =event.target.parentElement.querySelector('#Months12-24')
     if(checkboxColumbus.checked == true){
-      alert("The Checkbox is checked");
+      console.log("The Checkbox is checked");
+      if(checkboxMale.checked == true && checkboxAge.checked == true){
+        console.log("The Checkbox is checkeded");
+        crud.getRequest(`http://localhost:8080/api/filteredBikes/1/3/10`, bikes => {
+          console.log(bikes)
+          app.innerHTML = Bikes(bikes);
+        }
+        
+        )
+      
+      }
     }
-    else if(checkboxColumbus.checked == false); {
-      alert("The Checkbox is unchecked");
-    }
+    
   }
+  renderBikeInfo();
   });
 }
-
-document.querySelector("#Columbus")

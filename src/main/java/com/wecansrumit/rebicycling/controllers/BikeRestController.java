@@ -61,9 +61,14 @@ public class BikeRestController {
         return (Collection<Bike>) bikeRepo.findAllBikesBySuggestedAge(suggestedAge);
     }
 
-   /* @GetMapping("api/filteredBikes/{id}/{id}/{id}")
-    public Collection<Bike> getBikesByShopAndGenderAndSuggestedAge (@PathVariable Long id){
-        ?
-        return (Collection<Bike>) bikeRepo.findAllBikesByShopAndGenderAndSuggestedAge(?)
-    }*/
+   @GetMapping("api/filteredBikes/{shopid}/{genderid}/{suggestedid}")
+    public Collection<Bike> getBikesByShopAndGenderAndSuggestedAge (
+            @PathVariable Long shopid,
+            @PathVariable Long genderid,
+            @PathVariable Long suggestedid){
+       Optional<Shop> shop = Optional.of(shopRepo.findById(shopid).get());
+       Optional<Gender> gender = Optional.of(genderRepo.findById(genderid).get());
+        Optional<SuggestedAge> suggestedAge = Optional.of(suggestedAgeRepo.findById(suggestedid).get());
+       return (Collection<Bike>) bikeRepo.findAllBikesByShopAndGenderAndSuggestedAge(shop, gender, suggestedAge);
+    }
 }

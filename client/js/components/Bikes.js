@@ -66,7 +66,7 @@ export default function Bikes(bikes) {
         </label>
         <input type="checkbox"
             name="12-24 Months"
-            id="12-24 Months"
+            id="Months12-24"
             value="6">
 
             <br>
@@ -112,7 +112,6 @@ export default function Bikes(bikes) {
       </form>
       <br>
         <ul class = "bikes-list">
-
         ${bikes
           .map((bike) => {
             return `

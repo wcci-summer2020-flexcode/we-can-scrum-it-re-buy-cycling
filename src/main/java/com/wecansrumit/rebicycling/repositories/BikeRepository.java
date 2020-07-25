@@ -13,7 +13,10 @@ public interface BikeRepository extends CrudRepository <Bike, Long> {
     List<Bike> findAllBikesByShop (Optional<Shop> shop);
     List<Bike> findAllBikesByGender (Optional<Gender> gender);
     List<Bike> findAllBikesBySuggestedAge (Optional<SuggestedAge> suggestedAge);
-//    List<Bike> findAllBikesByShopAndGenderAndSuggestedAge (?);
+     List<Bike> findAllBikesByShopAndGenderAndSuggestedAge (
+             Optional<Shop>shop,
+             Optional<Gender>gender,
+             Optional<SuggestedAge>suggestedAge);
 }
 
 
