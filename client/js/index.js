@@ -24,6 +24,8 @@ function buildPage() {
   navHome();
   navBikes();
   navDonateMoney();
+  checkAlert();
+
 }
 
 function header() {
@@ -131,5 +133,22 @@ function renderBikeInfo() {
       })
     }
   });
-
 }
+
+function checkAlert(){
+  const app = document.querySelector('#app');
+  app.addEventListener('click', () => {
+    if(event.target.classList.contains('Check')) {
+      console.log(event.target);
+      const checkboxColumbus = event.target.parentElement.querySelector('#Columbus')
+    if(checkboxColumbus.checked == true){
+      alert("The Checkbox is checked");
+    }
+    else if(checkboxColumbus.checked == false); {
+      alert("The Checkbox is unchecked");
+    }
+  }
+  });
+}
+
+document.querySelector("#Columbus")
