@@ -43,30 +43,8 @@ public class JPAWiringTest {
         Gender testGenderNeutral = new Gender ("Neutral");
         SuggestedAge testSuggestedAge24 = new SuggestedAge ("2-4");
         SuggestedAge testSuggestedAge46 = new SuggestedAge ("4-6");
-        Bike testBike1 = new Bike (
-                "Schwinn",
-                "imageURL here",
-                "Mountain",
-                "12",
-                "Frank Swanson",
-                "$200.00",
-                "Available",
-                testShopColumbus,
-                testGenderNeutral,
-                testSuggestedAge24
-                );
-        Bike testBike2 = new Bike (
-                "Huffy",
-                "imageURL here",
-                "BMX",
-                "18",
-                "Mary Swanson",
-                "250.00",
-                "Not Available",
-                testShopCleveland,
-                testGenderMale,
-                testSuggestedAge46
-        );
+        Bike testBike1 = new Bike ("Schwinn", "imageURL here", "Mountain", "12", "Frank Swanson", "$200.00", "Available", testShopColumbus, testGenderNeutral, testSuggestedAge24);
+        Bike testBike2 = new Bike ("Huffy", "imageURL here", "BMX", "18", "Mary Swanson", "250.00", "Not Available", testShopCleveland, testGenderMale, testSuggestedAge46);
 
         shopRepo.save(testShopColumbus);
         shopRepo.save(testShopCleveland);
