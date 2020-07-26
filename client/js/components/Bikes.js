@@ -1,11 +1,9 @@
 export default function Bikes(bikes) {
   return `
     <h1>Search Our Bikes</h1>
-      <form name="CheckBoxForm"
+      <div
       class ="Check"
-      action="#"
       >
-
         <h2> Shops</h2>
 
           <label for="1">
@@ -25,7 +23,7 @@ export default function Bikes(bikes) {
             name="Cleveland"
             id="Cleveland"
             value="2">
-      </div>
+
 
     
         <h2> Gender</h2>
@@ -57,7 +55,7 @@ export default function Bikes(bikes) {
             name="Neutral"
             id="Neutral"
             value="5">
-      </div>
+
 
      
         <h2> Suggested Age Range</h2>
@@ -108,8 +106,14 @@ export default function Bikes(bikes) {
           name="Age 12-15"
           id="Age 12-15"
           value="10">
+        
+          <br>
+          
+          <button class= "submit">
+            Submit
+          </button>
       </div>
-      </form>
+
       <br>
         <ul class = "bikes-list">
         ${bikes
