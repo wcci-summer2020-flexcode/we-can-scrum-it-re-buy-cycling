@@ -10,6 +10,7 @@ import crud from './crud/crud';
 import Bikes from "./components/Bikes";
 import Bike from "./components/Bike";
 import DonateMoney from "./components/DonateMoney";
+import Volunteer from "./components/Volunteer"
 
 buildPage();
 
@@ -25,6 +26,7 @@ function buildPage() {
   navBikes();
   navDonateMoney();
   checkAlert();
+  navVolunteer();
 }
 
 function header() {
@@ -46,11 +48,19 @@ function navContact() {
 }
 
 function navSupport() {
-  const supportElm = document.querySelector(".nav-list_support");
-  supportElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Support();
-  });
+    const supportElm = document.querySelector(".nav-list_support");
+    supportElm.addEventListener("click", () => {
+        if(event.target.classList.contains('nav-list_faq')){
+            const app = document.querySelector("#app");
+            app.innerHTML = FAQ();}
+        else if(event.target.classList.contains('nav-list_donate_money')){
+            const app = document.querySelector("#app");
+            app.innerHTML = DonateMoney();
+        } else if(event.target.classList.contains('nav-list_volunteer')){
+          const app = document.querySelector("#app");
+            app.innerHTML = Volunteer();
+        }
+    })
 }
 
 function navDonateMoney() {

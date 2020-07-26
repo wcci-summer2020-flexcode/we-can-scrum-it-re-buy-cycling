@@ -21,11 +21,11 @@ export default function Header() {
     <li class='nav-list_support'>
        Support
       <ul>
-        <li class='nav-list_donate'>
+        <li class='nav-list_faq'>
         Donate Bike </li>
         <li class='nav-list_donate_money'>
         Donate Money </li>
-        <li class='nav-list_donate'>
+        <li class='nav-list_volunteer'>
         Volunteer</li>
         </ul>
         </li>
