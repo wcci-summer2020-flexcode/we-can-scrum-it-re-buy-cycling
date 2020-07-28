@@ -140,7 +140,7 @@ function navBikes() {
   const bikeElm = document.querySelector('.nav-list_bikes');
   bikeElm.addEventListener('click', () => {
     const app = document.querySelector('#app');
-    crud.getRequest('http://localhost:8080/api/bikes', bikes => {
+    crud.getRequest('http://localhost:8080/api/bikes', bikes => { /* this */
       app.innerHTML = Bikes(bikes);
     });
     renderBikeInfo();
@@ -150,8 +150,10 @@ function navBikes() {
 function renderBikeInfo() {
   const app = document.querySelector('#app');
   app.addEventListener('click', () => {
-    if (event.target.classList.contains('bikes-list_brandName')) {
-      const bikeId = event.target.querySelector('#bikeId').value;
+
+    if (event.target.parentElement.classList.contains('bike_item')) {
+      console.log("firing!")
+      const bikeId = document.querySelector('#bikeId').value;
       crud.getRequest(`http://localhost:8080/api/bikes/${bikeId}`, bike => {
         app.innerHTML = Bike(bike);
       })
@@ -159,29 +161,29 @@ function renderBikeInfo() {
   });
 }
 
-function checkAlert(){
+function checkAlert() {
   const app = document.querySelector('#app');
   app.addEventListener('click', () => {
-    if(event.target.parentElement.classList.contains('Check')) {
+    if (event.target.parentElement.classList.contains('Check')) {
       console.log(event.target);
       const checkboxColumbus = event.target.parentElement.querySelector('#Columbus')
-      const checkboxMale =event.target.parentElement.querySelector('#Male')
-      const checkboxAge =event.target.parentElement.querySelector('#Months12-24')
-    if(checkboxColumbus.checked == true){
-      console.log("The Checkbox is checked");
-      if(checkboxMale.checked == true && checkboxAge.checked == true){
-        console.log("The Checkbox is checkeded");
-        crud.getRequest(`http://localhost:8080/api/filteredBikes/1/3/10`, bikes => {
-          console.log(bikes)
-          app.innerHTML = Bikes(bikes);
+      const checkboxMale = event.target.parentElement.querySelector('#Male')
+      const checkboxAge = event.target.parentElement.querySelector('#Months12-24')
+      if (checkboxColumbus.checked == true) {
+        console.log("The Checkbox is checked");
+        if (checkboxMale.checked == true && checkboxAge.checked == true) {
+          console.log("The Checkbox is checkeded");
+          crud.getRequest(`http://localhost:8080/api/filteredBikes/1/3/10`, bikes => {
+            console.log(bikes)
+            app.innerHTML = Bikes(bikes);
+          }
+
+          )
+
         }
-        
-        )
-      
       }
+
     }
-    
-  }
-  renderBikeInfo();
+    renderBikeInfo();
   });
 }
