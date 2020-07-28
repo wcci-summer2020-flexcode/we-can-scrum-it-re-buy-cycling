@@ -48,19 +48,20 @@ function navContact() {
 }
 
 function navSupport() {
-    const supportElm = document.querySelector(".nav-list_support");
-    supportElm.addEventListener("click", () => {
-        if(event.target.classList.contains('nav-list_faq')){
-            const app = document.querySelector("#app");
-            app.innerHTML = FAQ();}
-        else if(event.target.classList.contains('nav-list_donate_money')){
-            const app = document.querySelector("#app");
-            app.innerHTML = DonateMoney();
-        } else if(event.target.classList.contains('nav-list_volunteer')){
-          const app = document.querySelector("#app");
-            app.innerHTML = Volunteer();
-        }
-    })
+  const supportElm = document.querySelector(".nav-list_support");
+  supportElm.addEventListener("click", () => {
+    if (event.target.classList.contains('nav-list_faq')) {
+      const app = document.querySelector("#app");
+      app.innerHTML = FAQ();
+    }
+    else if (event.target.classList.contains('nav-list_donate_money')) {
+      const app = document.querySelector("#app");
+      app.innerHTML = DonateMoney();
+    } else if (event.target.classList.contains('nav-list_volunteer')) {
+      const app = document.querySelector("#app");
+      app.innerHTML = Volunteer();
+    }
+  })
 }
 
 function navDonateMoney() {
@@ -78,6 +79,16 @@ function navDonateMoney() {
       var btn = document.getElementById("myBtn");
       var span = document.getElementsByClassName("close")[0];
 
+      //FORM VARIABLES  
+      var donationConfirmation = document.getElementById('confirmation');
+      var personFirst = document.getElementById('firstName');
+      var donationAmount = document.getElementById('other');
+      var donationThirty = document.getElementById('thirty');
+      var donationFifty = document.getElementById('fifty');
+      var donationHundred = document.getElementById('hundred');
+      var donationOther = document.getElementById('other');
+
+      //FUNCTIONALITY FOR MODAL BOX
       btn.onclick = function () {
         modal.style.display = "block";
       }
@@ -91,8 +102,38 @@ function navDonateMoney() {
           modal.style.display = "none";
         }
       }
+
+      //FUNCTIONALITY FOR DONATION BUTTONS
+      // // selectAmount
+      // document.getElementById('amount').addEventListener('click', function () {
+      //     var target = evt.target;
+
+      //     if (target.id === 'thirty') {
+      //         donationAmount = '30.00';
+      //     }
+      //     else if (target.id === 'fifty') {
+      //         donationAmount = '50.00';
+      //     }
+      //     else if (target.id === 'hundred') {
+      //         donationAmount = '100.00';
+      //     }
+      // })
+
+      // // setAmount
+      // document.getElementById('amount').addEventListener('click', function () {
+      //     var target = evt.target;
+
+      //     if (target.id === 'other') {
+      //         donationAmount = other.value;
+      //     }
+      // })
+
+      // CONFIRMATION MESSAGE
+      donationConfirmation.innerHTML =
+        personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at " + email.value + ".";
     }
   });
+
 }
 
 
@@ -169,29 +210,29 @@ function renderBikeInfo() {
   });
 }
 
-function checkAlert(){
+function checkAlert() {
   const app = document.querySelector('#app');
   app.addEventListener('click', () => {
-    if(event.target.parentElement.classList.contains('Check')) {
+    if (event.target.parentElement.classList.contains('Check')) {
       console.log(event.target);
       const checkboxColumbus = event.target.parentElement.querySelector('#Columbus')
-      const checkboxMale =event.target.parentElement.querySelector('#Male')
-      const checkboxAge =event.target.parentElement.querySelector('#Months12-24')
-    if(checkboxColumbus.checked == true){
-      console.log("The Checkbox is checked");
-      if(checkboxMale.checked == true && checkboxAge.checked == true){
-        console.log("The Checkbox is checkeded");
-        crud.getRequest(`http://localhost:8080/api/filteredBikes/1/3/10`, bikes => {
-          console.log(bikes)
-          app.innerHTML = Bikes(bikes);
+      const checkboxMale = event.target.parentElement.querySelector('#Male')
+      const checkboxAge = event.target.parentElement.querySelector('#Months12-24')
+      if (checkboxColumbus.checked == true) {
+        console.log("The Checkbox is checked");
+        if (checkboxMale.checked == true && checkboxAge.checked == true) {
+          console.log("The Checkbox is checkeded");
+          crud.getRequest(`http://localhost:8080/api/filteredBikes/1/3/10`, bikes => {
+            console.log(bikes)
+            app.innerHTML = Bikes(bikes);
+          }
+
+          )
+
         }
-        
-        )
-      
       }
+
     }
-    
-  }
-  renderBikeInfo();
+    renderBikeInfo();
   });
 }
