@@ -1,9 +1,11 @@
 export default function Bikes(bikes) {
   return `
+ 
     <h1>Search Our Bikes</h1>
       <div
       class ="Check"
       >
+    
         <h2> Shops</h2>
 
           <label for="1">
@@ -115,16 +117,22 @@ export default function Bikes(bikes) {
       </div>
 
       <br>
+      
         <ul class = "bikes-list">
         ${bikes
-          .map((bike) => {
-            return `
-        <li class="bikes-list_brandName">${bike.brandName}
-          <input type = "hidden" id="bikeId" value="${bike.id}">
-          </li>
+      .map((bike) => {
+        return `
+        <li class="bike_item"> 
+      
+        
+        <input type = "hidden" id="bikeId" value="${bike.id}">
+        <img class = "bike_image" src="${bike.imageUrl}"/>
+        <p class="bikes-list_brandName">${bike.brandName} </p>
+        
+        </li> 
         `;
       })
       .join("")}
     </ul>
     `;
-    }
+}
