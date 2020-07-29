@@ -1,11 +1,10 @@
 export default function Bike(bike) {
     return `
-// add container
-
     <h1>
     ${bike.brandName}
     </h1>
     
+
     <h3>
     Shop Location:
     ${bike.shop.location}

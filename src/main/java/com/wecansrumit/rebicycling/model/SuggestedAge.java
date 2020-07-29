@@ -2,10 +2,7 @@ package com.wecansrumit.rebicycling.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -16,6 +13,7 @@ public class SuggestedAge {
     @GeneratedValue
     private Long id;
     private String suggestedAgeRange;
+
     @JsonIgnore
     @OneToMany (mappedBy = "suggestedAge")
 
@@ -25,12 +23,12 @@ public class SuggestedAge {
         return id;
     }
 
-    public Collection<Bike> getBikes() {
-        return bikes;
-    }
-
     public String getSuggestedAgeRange(){
         return suggestedAgeRange;
+    }
+
+    public Collection<Bike> getBikes() {
+        return bikes;
     }
 
     public SuggestedAge(){}

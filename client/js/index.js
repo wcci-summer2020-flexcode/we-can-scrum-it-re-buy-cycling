@@ -190,25 +190,99 @@ function checkAlert() {
   const app = document.querySelector("#app");
   app.addEventListener("click", () => {
     let filteredBikes = [];
-    if (event.target.parentElement.classList.contains("Check")) {
+    if (event.target.parentElement.classList.contains("CheckBoxSection")) {
       crud.getRequest(`http://localhost:8080/api/bikes`, (bikes) => {
+        // id
         const checkboxColumbus = document.querySelector("#Columbus");
+        const checkboxCleveland = document.querySelector("#Cleveland");
         const checkboxMale = document.querySelector("#Male");
-        const checkboxAge1224 = document.querySelector("#Months12-24");
+        const checkboxFemale = document.querySelector("#Female");
+        const checkboxNeutral = document.querySelector("#Neutral");
+        const checkbox1224 = document.querySelector("#Age1224");
+        const checkbox24 = document.querySelector("#Age24");
+        const checkbox57 = document.querySelector("#Age57");
+        const checkbox811 = document.querySelector("#Age811");
+        const checkbox1215 = document.querySelector("#Age1215");
         const submitButton = document.querySelector(".submit");
+
         submitButton.addEventListener("click", () => {
           if (
             checkboxColumbus.checked === true &&
             checkboxMale.checked === true &&
-            checkboxAge1224.checked === true
+            checkbox24.checked === true
           ) {
             filteredBikes = [];
             bikes.map((bike) => {
+              // name
               if (
                 bike.shop.location === "Columbus" &&
                 bike.gender.genderType === "Male" &&
-                bike.suggestedAge.suggestedAgeRange === "12-24 Months"
+                bike.suggestedAge.suggestedAgeRange === "2-4 Years"
               ) {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (
+            checkboxCleveland.checked === true &&
+            checkboxMale.checked === true &&
+            checkbox24.checked === true
+          ) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (
+                bike.shop.location === "Cleveland" &&
+                bike.gender.genderType === "Male" &&
+                bike.suggestedAge.suggestedAgeRange === "2-4 Years"
+              ) {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (
+            checkboxCleveland.checked === true &&
+            checkboxMale.checked === true &&
+            checkbox57.checked === true
+          ) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (
+                bike.shop.location === "Cleveland" &&
+                bike.gender.genderType === "Male" &&
+                bike.suggestedAge.suggestedAgeRange === "5-7 Years"
+              ) {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (
+            checkboxCleveland.checked === true &&
+            checkboxFemale.checked === true &&
+            checkbox57.checked === true
+          ) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (
+                bike.shop.location === "Cleveland" &&
+                bike.gender.genderType === "Female" &&
+                bike.suggestedAge.suggestedAgeRange === "5-7 Years"
+              ) {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkboxCleveland.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.shop.location === "Cleveland") {
                 filteredBikes.push(bike);
                 console.log(bike);
                 app.innerHTML = Bikes(filteredBikes);
@@ -217,7 +291,68 @@ function checkAlert() {
           } else if (checkboxColumbus.checked === true) {
             filteredBikes = [];
             bikes.map((bike) => {
+              // name
               if (bike.shop.location === "Columbus") {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkboxMale.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.gender.genderType === "Male") {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkboxFemale.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.gender.genderType === "Female") {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkbox1224.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.suggestedAge.suggestedAgeRange === "12-24 Months") {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkboxNeutral.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.gender.genderType === "Neutral") {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkbox24.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.suggestedAge.suggestedAgeRange === "2-4 Years") {
+                filteredBikes.push(bike);
+                console.log(bike);
+                app.innerHTML = Bikes(filteredBikes);
+              }
+            });
+          } else if (checkbox57.checked === true) {
+            filteredBikes = [];
+            bikes.map((bike) => {
+              // name
+              if (bike.suggestedAge.suggestedAgeRange === "5-7 Years") {
                 filteredBikes.push(bike);
                 console.log(bike);
                 app.innerHTML = Bikes(filteredBikes);

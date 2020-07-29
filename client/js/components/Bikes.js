@@ -3,16 +3,18 @@ export default function Bikes(bikes) {
  
     <h1>Search Our Bikes</h1>
       <div
-      class ="Check"
+      class ="CheckBoxSection"
       >
     
         <h2> Shops</h2>
-
+      
+          <br>
+          
           <label for="1">
             Columbus
           </label>
           <input type="checkbox"
-            name="Columbus"
+            name="ColumbusBox"
             id="Columbus"
             value="1"/>
      
@@ -22,19 +24,18 @@ export default function Bikes(bikes) {
             Cleveland
           </label>
           <input type="checkbox"
-            name="Cleveland"
+            name="ClevelandBox"
             id="Cleveland"
             value="2">
-
-
+     
     
         <h2> Gender</h2>
-
+       
         <label for="3">
             Male
         </label>
         <input type="checkbox"
-            name="Male"
+            name="MaleBox"
             id="Male"
             value="3">
      
@@ -44,7 +45,7 @@ export default function Bikes(bikes) {
             Female
         </label>
         <input type="checkbox"
-            name="Female"
+            name="FemaleBox"
             id="Female"
             value="4">
 
@@ -54,19 +55,20 @@ export default function Bikes(bikes) {
             Neutral
         </label>
         <input type="checkbox"
-            name="Neutral"
+            name="NeutralBox"
             id="Neutral"
             value="5">
-
-
+  
+        <br>
      
         <h2> Suggested Age Range</h2>
+       
         <label for="6">
-            12-24 Months
+            Age 12-24 Months
         </label>
         <input type="checkbox"
             name="12-24 Months"
-            id="Months12-24"
+            id="Age1224"
             value="6">
 
             <br>
@@ -75,8 +77,8 @@ export default function Bikes(bikes) {
             Age 2-4
         </label>
         <input type="checkbox"
-            name="Age 2-4"
-            id="Age 2-4"
+            name="2-4 Years"
+            id="Age24"
             value="7">
 
             <br>
@@ -85,8 +87,8 @@ export default function Bikes(bikes) {
             Age 5-7
           </label>
           <input type="checkbox"
-            name="Age 5-7"
-            id="Age 5-7"
+            name="Age57Box"
+            id="Age57"
             value="8">
 
             <br>
@@ -95,8 +97,8 @@ export default function Bikes(bikes) {
           Age 8-11
         </label>
         <input type="checkbox"
-          name="Age 8-11"
-          id="Age 8-11"
+          name="Age811Box"
+          id="Age811"
           value="9">
 
           <br>
@@ -105,16 +107,17 @@ export default function Bikes(bikes) {
           Age 12-15
         </label>
         <input type="checkbox"
-          name="Age 12-15"
-          id="Age 12-15"
+          name="Age1215Box"
+          id="Age1215"
           value="10">
-        
+
+
           <br>
           
           <button class= "submit">
             Submit
           </button>
-      </div>
+          </div>
 
       <br>
       
@@ -131,8 +134,9 @@ export default function Bikes(bikes) {
         
         </li> 
         `;
-      })
-      .join("")}
+          })
+          .join("")}
     </ul>
     `;
 }
+
