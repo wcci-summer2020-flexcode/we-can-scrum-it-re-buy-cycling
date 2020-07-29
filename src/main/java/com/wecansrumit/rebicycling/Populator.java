@@ -40,14 +40,13 @@ public class Populator implements CommandLineRunner {
         genderRepo.save(male);
         genderRepo.save(female);
         genderRepo.save(neutral);
-
-//        SuggestedAge zeroToTwelveMonths = new SuggestedAge ("0-12 Months");
+        
         SuggestedAge twelveToTwentyFourMonths = new SuggestedAge ("12-24 Months");
         SuggestedAge twoToFourYears = new SuggestedAge ("2-4 Years");
         SuggestedAge fiveToSevenYears = new SuggestedAge ("5-7 Years");
         SuggestedAge eightToElevenYears = new SuggestedAge ("8-11 Years");
         SuggestedAge twelveToFifteenYears = new SuggestedAge ("12-15 Years");
-//        suggestedAgeRepo.save(zeroToTwelveMonths);
+
         suggestedAgeRepo.save(twelveToTwentyFourMonths);
         suggestedAgeRepo.save(twoToFourYears);
         suggestedAgeRepo.save(fiveToSevenYears);

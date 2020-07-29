@@ -65,10 +65,10 @@ public class BikeRestController {
     public Collection<Bike> getBikesByShopAndGenderAndSuggestedAge (
             @PathVariable Long shopid,
             @PathVariable Long genderid,
-            @PathVariable Long suggestedid){
+            @PathVariable Long suggestedAgeid){
        Optional<Shop> shop = Optional.of(shopRepo.findById(shopid).get());
        Optional<Gender> gender = Optional.of(genderRepo.findById(genderid).get());
-        Optional<SuggestedAge> suggestedAge = Optional.of(suggestedAgeRepo.findById(suggestedid).get());
+        Optional<SuggestedAge> suggestedAge = Optional.of(suggestedAgeRepo.findById(suggestedAgeid).get());
        return (Collection<Bike>) bikeRepo.findAllBikesByShopAndGenderAndSuggestedAge(shop, gender, suggestedAge);
     }
 }
