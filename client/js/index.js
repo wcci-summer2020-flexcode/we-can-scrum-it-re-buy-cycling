@@ -49,6 +49,7 @@ function navContact() {
 function navSupport() {
   const supportElm = document.querySelector(".nav-list_support");
   supportElm.addEventListener("click", () => {
+
     if (event.target.classList.contains("nav-list_faq")) {
       const app = document.querySelector("#app");
       app.innerHTML = FAQ();
@@ -60,6 +61,7 @@ function navSupport() {
       app.innerHTML = Volunteer();
     }
   });
+
 }
 
 function navDonateMoney() {
@@ -77,6 +79,16 @@ function navDonateMoney() {
       var btn = document.getElementById("myBtn");
       var span = document.getElementsByClassName("close")[0];
 
+      //FORM VARIABLES  
+      var donationConfirmation = document.getElementById('confirmation');
+      var personFirst = document.getElementById('firstName');
+      var donationAmount = document.getElementById('other');
+      var donationThirty = document.getElementById('thirty');
+      var donationFifty = document.getElementById('fifty');
+      var donationHundred = document.getElementById('hundred');
+      var donationOther = document.getElementById('other');
+
+      //FUNCTIONALITY FOR MODAL BOX
       btn.onclick = function () {
         modal.style.display = "block";
       };
@@ -89,9 +101,16 @@ function navDonateMoney() {
         if (event.target == modal) {
           modal.style.display = "none";
         }
+
+        // CONFIRMATION MESSAGE
+        donationConfirmation.innerHTML =
+          personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at " + email.value + ".";
+
       };
+
     }
   });
+
 }
 
 function navOurMission() {
@@ -167,6 +186,7 @@ function renderBikeInfo() {
 }
 
 function checkAlert() {
+
   const app = document.querySelector("#app");
   app.addEventListener("click", () => {
     let filteredBikes = [];
@@ -342,5 +362,6 @@ function checkAlert() {
         });
       });
     }
+
   });
 }

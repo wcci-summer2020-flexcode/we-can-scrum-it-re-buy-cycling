@@ -1,57 +1,45 @@
 export default function navDonateMoney() {
 	return `
-    <div class="donation-container">
-            
-		<div class="donation-box">
-			<div class="title">Donation Information</div>
-			
-			<div class="fields">
-				<input type="text" id="firstName" placeholder="First Name"> </input>
-				<input type="text" id="lastName" placeholder="Last Name"> </input>
-				<input type="text" id="email" placeholder="Email"> </input>
-			</div>
-			
-			<div class="amount">
-				<div class="button">$30</div>
-				<div class="button">$50</div>
-				<div class="button">$100</div>
-				<div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-			</div>
-			
-			<div class="switch">
-				<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-				<label for="one-time" class="switch-label switch-label-off">One-Time</label>
-				<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-				<label for="monthly" class="switch-label switch-label-on">Monthly</label>
-				<span class="switch-selection"></span>
-			</div>
-			
-			<div class="checkboxes">
-				<input type="checkbox" id="receipt" class="checkbox" />
-				<label for="receipt">Email Me A Receipt</label>
-				<br />
-				<input type="checkbox" id="anon" class="checkbox" />
-				<label for="anon">Give Anonymously</label>
-				<br />
-				<input type="checkbox" id="list" class="checkbox" />
-				<label for="list">Keep me Updated!</label>
-			</div>
-			
-			<div class="confirm">	
-			</div>
+	<div class="donation-container">
 
-			<button class="donate-button" id="myBtn"> Donate Now</button>
+    <div class="volunteer-title">
+        <h1>Make a Donation</h1>
+    </div>
+    <div class="main">
+        <form name="donation form" id="donate_frm" action="#">
+            <div id="personal-info">
+                <label class="personal-info_label">First Name</label>
+                <input class="firstname" type="text" name="first_name" id="firstName"><br>
+                <label class="personal-info_label">Last Name</label>
+                <input class="lastname" type="text" name="last_name" id="lastName"><br>
+                <label class="personal-info_label">Address</label>
+                <input class="address" type="text" name="address" id="address"><br>
+                <label class="personal-info_label">City</label>
+                <input class="city" type="text" name="city" id="city"><br>
+                <label class="personal-info_label">Zip</label>
+                <input class="zip" type="text" name="zip" id="zip"><br>
+                <label class="personal-info_label">Phone</label>
+                <input class="phone" type="text" name="phone" id="phone"><br>
+                <label class="personal-info_label">Email</label>
+				<input class="email" type="text" name="email" id="email"><br>
+				<label class="personal-info_label">Donation Amount</label>
+				<input class="set-amount" type="text" name="amount" id="other"><br>
 
+            </div>
+
+			<button class="donate-button" id="myBtn" onclick="makeDonation();"> Donate Now</button>
             
 		<div id="myModal" class="modal">
-
 			<div class="modal-content">
 				<span class="close">&times;</span>
-				<p>Thank you, [first name here] for your donation of [dollar amount here]. </p><p>For tax purposes, a gift receipt has been emailed to you at [email address here].</p>
+				<p id="confirmation"></p>
 			</div>
 
-		</div>
-		</div>
+        </form>
+
+    </div>
+
+   
 	</div>
 
 	<script src="./js/DonationForm.js"></script>
