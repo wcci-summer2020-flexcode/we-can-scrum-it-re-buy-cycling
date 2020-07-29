@@ -1,0 +1,41 @@
+/* //Here is where you change the background image for all */
+body{
+    background-image: url(../assets/body.jpg);
+    font-weight: bold;
+}
+
+.volunteer-title{
+    width: 800px;
+    background-color: rgb(0,0,0,6);
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+
+}
+.main{
+    background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding: 10px;
+}
+
+#name{
+    width: 100%;
+    
+}
+
+
+#weekdays{
+    color: snow;
+}
+#submit{
+    width: 20em;
+    height: 3em;
+    background-color: goldenrod;
+    
+    
+}
