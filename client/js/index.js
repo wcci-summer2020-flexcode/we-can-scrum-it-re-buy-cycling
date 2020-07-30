@@ -89,9 +89,10 @@ function navDonateMoney() {
       var donationOther = document.getElementById('other');
 
       //FUNCTIONALITY FOR MODAL BOX
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
+      // ;
+      // btn.onclick = function () {
+      modal.style.display = "block";
+      // };
 
       span.onclick = function () {
         modal.style.display = "none";
@@ -101,12 +102,13 @@ function navDonateMoney() {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-
-        // CONFIRMATION MESSAGE
-        donationConfirmation.innerHTML =
-          personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at " + email.value + ".";
-
       };
+
+      // CONFIRMATION MESSAGE
+      donationConfirmation.innerHTML =
+        personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at " + email.value + ".";
+
+
 
     }
   });

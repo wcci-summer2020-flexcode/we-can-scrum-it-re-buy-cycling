@@ -1,5 +1,5 @@
 export default function navDonateMoney() {
-	return `
+    return `
 	<div class="donation-container">
 
     <div class="volunteer-title">
@@ -27,7 +27,7 @@ export default function navDonateMoney() {
 
             </div>
 
-			<button class="donate-button" id="myBtn" onclick="makeDonation();"> Donate Now</button>
+			<button class="donate-button" id="myBtn"> Donate Now</button>
             
 		<div id="myModal" class="modal">
 			<div class="modal-content">
