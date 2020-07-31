@@ -15,9 +15,6 @@ export default function Header() {
     <li class='nav-list_bikes'>
       Bikes
     </li>
-    <li class='nav-list_donate_money'>
-    Make a Donation
-  </li>
     <li class='nav-list_support'>
        Support
       <ul>
