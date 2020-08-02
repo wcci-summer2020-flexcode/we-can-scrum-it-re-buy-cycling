@@ -1,12 +1,13 @@
 import logo_image from "../../assets/logo_placeholder_image.png";
 export default function Header() {
   return `
-  <div class="logo"><img class="logo-image" src="${logo_image}" alt="child riding bike"></div>
+  
   <div class="header">
-  <h1 class="home-header">Re-Buy-Cycle</h1>
-  <h2 class="home-subhead">Children's Bicycle Trade-Up Program</h2> 
+  
+  
 
  <ul class ='nav-list'>
+ <div class="logo"><img class="logo-image" src="${logo_image}" alt="child riding bike"></div>
     <li class='nav-list_home'>
         Home
     </li>
