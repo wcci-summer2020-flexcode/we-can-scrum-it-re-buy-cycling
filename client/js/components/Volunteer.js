@@ -7,12 +7,12 @@ export default function navVolunteer() {
 
 <div class="volunteer-title"><h1>Volunteer Registration</h1></div>
 <div class="main">
-<form>
+<form id="volunteer">
 <div id="name">
 
 
 <label class="firstlabel">First Name</label>
-<input class="fname" type="text" name="first_name"><br>
+<input id="fname" type="text" name="first_name"><br>
 <label class="secondlabel">Last Name</label>
 <input class="lname" type="text" name="last_name"><br>
 <label class="thirdlabel">Address</label>
@@ -45,7 +45,10 @@ name="thursday" value="thursday">
 <p>Time Availability</p>
 <textarea rows="5" cols="50" name="description">
 Provide details on hours available</textarea><br><br>
-<input type="submit" id="submit" value="submit" /><br><br>
+<input class="volunteer-btn" type="submit" id="submit" value="submit" /><br><br>
+
+  </div>
+</div>
 </div>
 </div>
 </form>
