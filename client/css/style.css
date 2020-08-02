@@ -1,8 +1,24 @@
 *{
+    /* background-image: url(/assets/body.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: bold; */
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+/* //Here is where you change the background image for all
+body{
+    background-image: url(/assets/body.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: bold;
+} */
+
 
 h1, h2, h3, h4{
     margin: 1.5rem;

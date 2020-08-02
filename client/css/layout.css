@@ -6,13 +6,32 @@
     text-align: center;
 }
 
-
 .header{
     margin: 2rem auto;
     max-width: 90%;
     width: 1000px;
 }
-
+.logo-image{
+    position: relative;
+float: left;
+    width: 25%;
+    height: auto
+}
+.home-header{
+        display: inline;
+        font-size: 6em;
+    margin-bottom: 0em;
+    /* position: absolute; */
+    top: 1rem;
+    text-shadow: 2px 2px 7px white;
+}
+.home-subhead{
+    font-size: 2em;
+    margin-top: 0em;
+    /* position: absolute; */
+    top: 18rem;   
+    text-shadow: 2px 2px 7px white;
+}
 .nav-list{
     display: flex;
     justify-content: space-between;
