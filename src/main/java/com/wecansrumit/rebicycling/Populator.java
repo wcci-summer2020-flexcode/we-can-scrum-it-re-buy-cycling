@@ -121,7 +121,7 @@ public class Populator implements CommandLineRunner {
         Bike bikeJohnDeere1	 = new Bike (
                 "John Deere Heavy Duty Bike - Green",
 //                Heavy Duty Boys Bicycle
-                "https://www.duitworld.world/images/z/6o05bp6t6.jpg",
+                "https://i5.walmartimages.com/asr/6b3f0bdc-a7ce-49d0-82e6-8f656ca9e61d_1.17fa4ce68b8e75ac10bf6b3dbc16fcd6.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff",
                 "Kids Single Speed w/ Training Wheels",
                 "12 inch",
                 "Robin Thomas",

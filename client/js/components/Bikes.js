@@ -125,13 +125,11 @@ export default function Bikes(bikes) {
         ${bikes
       .map((bike) => {
         return `
-        <li class="bike_item"> 
-      
-        
+        <li class="bike_item">
         <input type = "hidden" id="bikeId" value="${bike.id}">
         <img class = "bike_image" src="${bike.imageUrl}"/>
         <p class="bikes-list_brandName">${bike.brandName} </p>
-        
+  
         </li> 
         `;
           })
