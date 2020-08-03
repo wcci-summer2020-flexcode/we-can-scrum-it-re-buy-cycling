@@ -1,6 +1,6 @@
 export default function Footer() {
     return `
-    <small>&copy WeCanScrumIt 2020</small>
+    <h3>&copy WeCanScrumIt 2020</h3>
     <ul class='social-list'>
         
         <a href="#" class="fa fa-facebook"></a>

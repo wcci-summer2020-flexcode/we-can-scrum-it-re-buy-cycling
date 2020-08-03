@@ -74,7 +74,6 @@ function navSupport() {
 
     }
   })
-
 }
 
 function navDonateMoney() {
@@ -191,8 +190,8 @@ function navBikes() {
 function renderBikeInfo() {
   const app = document.querySelector("#app");
   app.addEventListener("click", () => {
-    if (event.target.classList.contains("bikes-list_brandName")) {
-      const bikeId = event.target.querySelector("#bikeId").value;
+    if (event.target.parentElement.classList.contains("bike_item")) {
+      const bikeId = event.target.parentElement.querySelector("#bikeId").value;
       crud.getRequest(`http://localhost:8080/api/bikes/${bikeId}`, (bike) => {
         app.innerHTML = Bike(bike);
       });
