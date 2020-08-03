@@ -1,29 +1,46 @@
-import logo_image from "../../assets/logo_placeholder_image.png";
+import logo_image from "../../assets/Logo2.png";
 export default function Header() {
   return `
   
   <div class="header">
   
   
-
+  <div class="logo">
+  <img class="logo-image" src="${logo_image}" alt="child riding bike">
+</div>
  <ul class ='nav-list'>
- <div class="logo"><img class="logo-image" src="${logo_image}" alt="child riding bike"></div>
+
+
+ <span class= "navigation">
     <li class='nav-list_home'>
+    <h2>
         Home
+    </h2>
     </li>
     <li class='nav-list_ourMission'>
+      <h2>
         Our Mission
+      </h2>
     </li>
     <li class='nav-list_howItWorks'>
+      <h2>    
         How It Works
+      </h2>
     </li>
-    <li class='nav-list_faq'>FAQ
+    <li class='nav-list_faq'>
+      <h2>
+        FAQ
+      </h2>
     </li>
     <li class='nav-list_bikes'>
-      Bikes
+      <h2>
+        Bikes
+      </h2>
     </li>
     <li class='nav-list_support'>
-       Support
+      <h2>   
+        Support
+      </h2>
       <ul>
         <li class='nav-list_faq'>
         Donate Bike </li>
@@ -33,10 +50,8 @@ export default function Header() {
         Volunteer</li>
         </ul>
         </li>
-    <li class='nav-list_contact'>
-            Contact Us
-    </li>
   </ul
   </div>
+  </span>
   `;
 }
