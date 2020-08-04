@@ -3,11 +3,11 @@ export default function Footer() {
     <small>&copy WeCanScrumIt 2020</small>
     <ul class='social-list'>
         
-        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
      
-        <a href="#" class="fa fa-twitter"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
         
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
     </ul>
     `;
 }
