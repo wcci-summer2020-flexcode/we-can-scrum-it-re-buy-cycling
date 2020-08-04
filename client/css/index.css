@@ -1,5 +1,6 @@
-.index_content { /*mirror of home_content*/
-  background-image: url(../assets/CloudBackground.png);
+.index_content {
+  /*mirror of home_content*/
+  background-image: url(../assets/body2.png);
   background-size: 100%;
   background-repeat: none;
 }
