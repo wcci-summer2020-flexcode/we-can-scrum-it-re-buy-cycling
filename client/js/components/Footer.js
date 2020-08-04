@@ -28,6 +28,7 @@ export default function Footer() {
     <br><br><br><br><br><br>
     <ul class='social-list'>
         
+
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>
     <a href="#" class="fa fa-instagram"></a>
@@ -44,5 +45,6 @@ export default function Footer() {
     </footer>
     
  
+
     `;
 }
