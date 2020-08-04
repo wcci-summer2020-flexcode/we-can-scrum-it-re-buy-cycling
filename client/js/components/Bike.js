@@ -4,7 +4,6 @@ export default function Bike(bike) {
     ${bike.brandName}
     </h1>
     
-
     <h3>
     Shop Location:
     ${bike.shop.location}

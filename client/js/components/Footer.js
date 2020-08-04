@@ -1,5 +1,5 @@
 export default function Footer() {
-    return `
+  return `
     
     <footer id="footer">
     <section>Re-Buy-Cycling
@@ -29,9 +29,24 @@ export default function Footer() {
     <ul class='social-list'>
         
 
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/" 
+        class="fa fa-facebook"
+        target="blank"
+        >
+        
+    </a>
+
+    <a href="https://twitter.com/" 
+        class="fa fa-twitter"
+        target="blank"
+        >
+        
+    </a>
+    <a href="https://www.instagram.com/" 
+        class="fa fa-instagram"
+        target="blank"
+        >
+    </a>
 </ul></section>
     <section>Our Address<br><br>
     <p id="address"> 1234 Main St<br>
@@ -43,8 +58,5 @@ export default function Footer() {
         </section>
 
     </footer>
-    
- 
-
     `;
 }

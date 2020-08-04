@@ -1,0 +1,120 @@
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .logo {
+    margin: 0;
+    display: absolute;
+  }
+  .logo-image {
+    position: absolute;
+    margin: 0;
+    padding-top: .3em;
+    padding-left: 8em;
+    width: 16%;
+    height: auto; /* height of actual logo*/
+  }
+
+  .navigation {
+    margin-left: 400px;
+    margin-top: 82px; /*position of items in navbar from top*/
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none; /*bullet points*/
+    margin: 0em;
+    height: 95px; /* size of navbar height */
+    width: 100%;
+    background-color: #7a9e9f;
+    flex-flow: row;
+    justify-content: left; /* position of where content is on entire page */
+    text-align: center; /*text in line position*/
+    padding: 1em;
+    border-style: solid;
+    border-width: 0.25em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+  }
+  
+  .nav-list li {
+    background: #7a9e9f;
+    color: white;
+    text-shadow: -2px 1px 1px black;
+    display: inline;
+    margin-top: 150px; /*position where items are from top of page */
+    margin-left: 50px;
+    margin-right: 25px;
+    padding-left: em;
+    padding-right: em;
+    outline: 0rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 0px;
+  }
+
+  .nav-list li h2 {
+    background: #7a9e9f;
+    color: white;
+    text-shadow: -2px 1px 1px black;
+    display: inline;
+    margin-top: 150px; /*position where items are from top of page */
+    font-size: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-list li h2:hover {
+    transition: 0.2s;
+    text-shadow: -2px 2px 8px black;
+  }
+
+  .nav-list_support > ul li {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    visibility: hidden;
+    transition: top 0.3s;
+    padding: 10em;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    margin: 0;
+  }
+  
+  /* still needs work!!!!! */
+  .nav-list_support:hover > ul li {
+    /*support dropdown items*/
+    list-style-type: none;
+    margin: 0em; /* space between each link*/
+    /*fix white border on boxes*/
+    margin-left: 650px;
+    visibility: visible;
+    position: relative;
+
+    display: list-item;
+    color: white;
+    padding: 1em;
+  }
+  
+  .nav-list_faq:hover {
+    /*placeholder for donate bike*/
+    transition: 0.2s;
+    text-shadow: -2px 2px 8px black;
+  }
+  
+  .nav-list_donate_money:hover {
+    transition: 0.2s;
+    text-shadow: -2px 2px 8px black;
+  }
+  
+  .nav-list_volunteer:hover {
+    transition: 0.2s;
+    text-shadow: -2px 2px 8px black;
+  }
+  

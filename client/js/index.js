@@ -1,6 +1,5 @@
 import { default as Header } from "./components/Header";
 import { default as Footer } from "./components/Footer";
-import Contact from "./components/Contact";
 import Support from "./components/Support";
 import OurMission from "./components/OurMission";
 import HowItWorks from "./components/HowItWorks";
@@ -21,7 +20,6 @@ function buildPage() {
   footer();
   navSupport();
   navOurMission();
-  navHowItWorks();
   navFAQ();
   navHome();
   navBikes();
@@ -127,13 +125,7 @@ function navOurMission() {
     app.innerHTML = OurMission();
   });
 }
-function navHowItWorks() {
-  const ourHowItWorksElm = document.querySelector(".nav-list_howItWorks");
-  ourHowItWorksElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = HowItWorks();
-  });
-}
+
 
 function navFAQ() {
   const faqElm = document.querySelector(".nav-list_faq");
