@@ -373,9 +373,3 @@ function checkAlert() {
   }); 
 }
 
-function carousel() {
- 
-
-
-
-}
