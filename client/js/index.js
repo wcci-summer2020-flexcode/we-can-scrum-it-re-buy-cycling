@@ -19,7 +19,6 @@ buildPage();
 function buildPage() {
   header();
   footer();
-  navContact();
   navSupport();
   navOurMission();
   navHowItWorks();
@@ -42,13 +41,7 @@ function footer() {
   footerElem.innerHTML = Footer();
 }
 
-function navContact() {
-  const contactElm = document.querySelector(".nav-list_contact");
-  contactElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Contact();
-  });
-}
+
 
 function navSupport() {
   const supportElm = document.querySelector(".nav-list_support");
