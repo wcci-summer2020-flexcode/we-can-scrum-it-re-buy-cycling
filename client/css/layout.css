@@ -1,106 +1,170 @@
+* {
+  margin: 0; /*required for header to be at top of page*/
+}
+
 #app {
-    margin: 2rem auto;
-    max-width: 90%;
-    min-height: 75vh;
-    width: 1000px;
-    text-align: center;
+  /* content information container*/
+  margin: 2rem auto;
+  max-width: 90%;
+  min-height: 75vh;
+  width: 1000px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 24px;
 }
 
-.header{
-    margin: 1rem auto;
-    top: 0;
-    left: 0;
-    width: 100%;
-    flex-flow: row;
-    justify-content: center;
-    text-align: center;
-    background-color: lightsalmon;
-}
-.logo-image{
-    position: relative;
-float: left;
-    width: 25%;
-    height: auto
-}
-.home-header{
-    display: inline;
-    font-size: 6em;
-    margin-bottom: 0em;
-    /* position: absolute; */
-    top: 1rem;
-    text-shadow: 2px 2px 7px white;
-    background-color: lightsteelblue;
-}
-.home-subhead{
-    font-size: 2em;
-    margin-top: 0em;
-    /* position: absolute; */
-    top: 18rem;   
-    text-shadow: 2px 2px 7px white;
-}
-.nav-list{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background-color: lime;
-    margin: 1rem auto;
-    top: 0;
-    left: 0;
-    width: 100%;
-    flex-flow: row;
-    justify-content: center;
-    text-align: center;
-    padding: 2em;
+.header {
+  /* no value for header at this time */
+  background-color: lightsalmon;
 }
 
-
-
-
-
-
-.nav-list li{
-    float: none;
-    display: outside;
-    background: lime;
-    margin: 0 5px;
-    padding: 2em;
-    outline: 0rem;
-    font-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.logo {
+  margin: 0;
+  padding: 0em;
+  display: absolute;
+}
+.logo-image {
+  position: absolute;
+  margin: 0;
+  margin-top: 1em; /* logo position from top*/
+  width: 20%;
+  height: auto; /* height of actual logo*/
 }
 
-
-
-
-
-
-
-
-.footer{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem auto;
-    max-width: 90%;
-    width: 900px;
+.navigation {
+  margin-left: 500px;
+  margin-top: 150px;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none; /*bullet points*/
+  margin: 0em;
+  height: 200px; /* size of navbar height */
+  width: 100%;
+  background-color: #7a9e9f;
+  flex-flow: row;
+  justify-content: left; /* position of where content is on entire page */
+  text-align: center; /*text in line position*/
+  padding: 1em;
+  border-style: solid;
+  border-width: 0.5em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
 }
 
-.social-list{
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
+.nav-list li {
+  background: #7a9e9f;
+  color: white;
+  text-shadow: -2px 1px 1px black;
+  display: inline;
+  margin-top: 150px; /*position where items are from top of page */
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: em;
+  padding-right: em;
+  outline: 0rem;
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 0px;
+}
+.nav-list li h2 {
+  background: #7a9e9f;
+  color: white;
+  text-shadow: -2px 1px 1px black;
+  display: inline;
+  margin-top: 150px; /*position where items are from top of page */
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
+.nav-list li h2:hover {
+  transition: 0.2s;
+  border-radius: 25%;
+  font-size: 30px;
+
+  background-color: #4f6367;
+}
+
+.home-header {
+  position: static;
+  display: inline;
+  font-size: 20em;
+  margin-top: 0em;
+  /* position: absolute; */
+  top: 1rem;
+  text-shadow: 2px 2px 7px white;
+  background-color: lightsteelblue;
+}
+.home-subhead {
+  font-size: 2em;
+  margin-top: 0em;
+  /* position: absolute; */
+  top: 18rem;
+  text-shadow: 2px 2px 7px white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.footer {
+  display: flex;
+  list-style-type: none;
+  margin: 0em;
+  width: 100%;
+  height: 300px; /*footer height */
+  background-color: #7a9e9f;
+  width: 100%;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1em;
+  justify-content: space-between;
+  margin-bottom: 0;
+  background-color: #7a9e9f;
+  border-style: solid;
+  border-width: 0.5em;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+}
+
+.footer h3 {
+  margin-left: 200px;
+  color: white;
+  font-size: 25px;
+  text-shadow: -3px 0px 4px black;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 70px;
+  text-shadow: -5px 0px 2px black;
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-  }
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: none;
+  color: white;
+}
 
 
   /* Grid for Bikes Page */
@@ -152,17 +216,10 @@ float: left;
     font-size: x-large;
   }
 
-.bike_image{
-    height: 250px;
-    width: 245px
-
+.bike_image {
+  height: 250px;
+  width: 245px;
 }
-.bike_item{
-    border: 1px solid rgba(0, 0, 0, 0.8); 
+.bike_item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
-   
-
-
-
-
-    

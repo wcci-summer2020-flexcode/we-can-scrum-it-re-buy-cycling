@@ -19,7 +19,6 @@ buildPage();
 function buildPage() {
   header();
   footer();
-  navContact();
   navSupport();
   navOurMission();
   navHowItWorks();
@@ -42,13 +41,7 @@ function footer() {
   footerElem.innerHTML = Footer();
 }
 
-function navContact() {
-  const contactElm = document.querySelector(".nav-list_contact");
-  contactElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Contact();
-  });
-}
+
 
 function navSupport() {
   const supportElm = document.querySelector(".nav-list_support");
@@ -74,7 +67,6 @@ function navSupport() {
 
     }
   })
-
 }
 
 function navDonateMoney() {
@@ -191,8 +183,8 @@ function navBikes() {
 function renderBikeInfo() {
   const app = document.querySelector("#app");
   app.addEventListener("click", () => {
-    if (event.target.classList.contains("bikes-list_brandName")) {
-      const bikeId = event.target.querySelector("#bikeId").value;
+    if (event.target.parentElement.classList.contains("bike_item")) {
+      const bikeId = event.target.parentElement.querySelector("#bikeId").value;
       crud.getRequest(`http://localhost:8080/api/bikes/${bikeId}`, (bike) => {
         app.innerHTML = Bike(bike);
       });
