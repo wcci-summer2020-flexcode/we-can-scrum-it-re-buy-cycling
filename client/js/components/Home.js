@@ -2,7 +2,6 @@
 export default function home() {
   return `
     <div class ="home_content">
-   
     <article>
     <h2>Children's Bike Exchange Program</h2>
     <p>We know that kids grow fast, but it's easy to keep them on a high-quality bike 

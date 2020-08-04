@@ -4,29 +4,25 @@ export default function Header() {
   
   <div class="header">
   
-  
   <div class="logo">
-  <img class="logo-image" src="${logo_image}" alt="child riding bike">
-</div>
+    <img
+      class= "logo-image" 
+      src="${logo_image}"
+      >
+  </div>
+  
  <ul class ='nav-list'>
-
-
- <span class= "navigation">
-    <li class='nav-list_home'>
-    <h2>
-        Home
-    </h2>
-    </li>
-    <li class='nav-list_ourMission'>
-      <h2>
-        Our Mission
-      </h2>
-    </li>
-    <li class='nav-list_howItWorks'>
-      <h2>    
-        How It Works
-      </h2>
-    </li>
+    <span class= "navigation">
+      <li class='nav-list_home'>
+        <h2>
+          Home
+        </h2>
+      </li>
+      <li class='nav-list_ourMission'>
+        <h2>
+          Our Mission
+        </h2>
+      </li>
     <li class='nav-list_faq'>
       <h2>
         FAQ

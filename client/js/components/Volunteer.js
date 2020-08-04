@@ -57,11 +57,6 @@ Provide details on hours available</textarea><br><br>
 
 </html>
 
-
-
-
-
   `;
-
 }
 
