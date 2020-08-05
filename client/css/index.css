@@ -51,3 +51,10 @@
   color: #fe5f55;
   border-color: #4f6367;
 }
+.sponsors_scroll{
+  display: inline-block;
+}
+.sponsor_logo{
+  height: 100px;
+  width: auto;
+ } 
