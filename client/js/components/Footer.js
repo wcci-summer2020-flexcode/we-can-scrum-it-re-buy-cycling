@@ -2,57 +2,75 @@ export default function Footer() {
   return `
     
     <footer id="footer">
-    <section>Re-Buy-Cycling
-    <br><br>
+    <section>
+    <h3>Re-Buy-Cycling</h3>
     <ul id="footer-list-sections">
-        <li> Home </li>
+        <div class ="footerHome">
+            Home
+        </div>
         <br>
-        <li> Our Mission </li>
+        <div class ="footerOurMission"> Our Mission </div>
         <br>
-        <li> Join Our Team</li>
+        <div class ="footerBikes"> Bikes </div>
         <br>
-        <li> Volunteer</li>
+        <div class ="footerFAQ"> FAQ</div>
+        <br>
+        <div class="footerDonateBike"> Donate Bike </div>
+        <br>
+        <div class ="footerDonateMoney"> Donate Money </div>
+        <br>
+        <div class="footerVolunteer"> Volunteer</div>
         <br><br><br><br>
-        <form>
-        <p id="subscribe">Subscribe</p><p id="join">Join our newsletter to get
-        the latest information.
-        <input type="email" id="email" name="email">
-        <button type="submit">Subscribe </button> </p>
-        </form>
         </section>
-    <section>Contact Us<br>
-    <br>
-    <p id="contact"> Phone: 614-987-0021</P>
-    <br>
-    <p id="contact"> info@rebuycycling.com</p>
-    <br><br><br><br><br><br>
+    <section><h3>Subscribe</h3><br>
     <ul class='social-list'>
-        
-
     <a href="https://www.facebook.com/" 
         class="fa fa-facebook"
         target="blank"
-        >
-        
+        >  
     </a>
 
     <a href="https://twitter.com/" 
         class="fa fa-twitter"
         target="blank"
         >
-        
     </a>
     <a href="https://www.instagram.com/" 
         class="fa fa-instagram"
         target="blank"
         >
     </a>
-</ul></section>
-    <section>Our Address<br><br>
-    <p id="address"> 1234 Main St<br>
+</ul>
+    <form>
+        <p id="subscribe">
+        </p>
+        <p id="join">Join our newsletter to get
+        the latest information.</p>
+        <input type="email" id="email" name="email">
+        <button type="submit">Subscribe </button> </p>
+        </form>
+</section>
+    <section>
+    <h3>Contact Us</h3>
+   
+    <a href="tel:"> 1.844.932.2626</a>
+    <br>
+    <br>
+    <a href="mailto:rebuycycling@gmail.com">rebuycycling@gmail.com </a>
+    <br>
+    <br>
+    
+    <p id="address"> 
+    Columbus Store:
+    <br>
+    1234 Main St<br>
         Columbus, OH 43026 </p>
+    
+        <p id="address">
+        Cleveland Store:
         <br>
-        <p id="address">View Map</p>
+        5678 Main St<br>
+            Cleveland, OH 44101 </p>  
         <br><br><br>
         
         </section>

@@ -60,7 +60,7 @@ public class ShopControllerTest {
     public void fetchAllEndpointReturnsAllShops() throws Exception {
         when(shopRepo.findAll()).thenReturn(Collections.singletonList(testShop));
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(underTest).build();
-        mockMvc.perform(get("/api/allshops/"))
+        mockMvc.perform(get("/api/shops/"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$", hasSize(1)))
@@ -78,7 +78,7 @@ public class ShopControllerTest {
     public void fetchByIdEndpointReturnASpecificBike() throws Exception{
         when(shopRepo.findById(1L)).thenReturn(Optional.of(testShop));
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(underTest).build();
-        mockMvc.perform(get("/api/allshops/1"))
+        mockMvc.perform(get("/api/shops/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.location", is("TestShop")));

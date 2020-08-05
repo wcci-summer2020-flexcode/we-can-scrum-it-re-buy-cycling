@@ -1,6 +1,6 @@
 .grid-container {
-    width: 1300px;
-  background-color: #EEF5DB;
+  width: 1300px;
+  background-color: #eef5db;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -18,38 +18,39 @@
   grid-area: sidebar;
 }
 
-.CheckBoxSection{
-  /* display: grid; */
-  align-items: baseline ;
+.CheckBoxSection {
+  /* display: grid;  */
+  align-items: flex-start;
   /* background-color: aquamarine; */
   background-color: EEF5DB;
-  grid-area: CheckBoxSection;    
+  grid-area: CheckBoxSection;
   grid-template-columns: 1fr;
   gap: 1px 1px;
   grid-template-areas: ".";
   text-align: left;
-  padding: 1em ;
+  padding: 1em;
 }
-.BLANK { 
+.BLANK {
   display: grid;
-  grid-area: BLANK; 
+  grid-area: BLANK;
 }
 
-.bikes-list{
+.bikes-list {
   display: grid;
-  background-color: #EEF5DB;
+  background-color: #eef5db;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
-  grid-area: bikes-list;    
+  grid-area: bikes-list;
   font-size: x-large;
+  list-style-type: none;
 }
 
 .bike_image {
-height: 250px;
-width: 245px;
+  height: 250px;
+  width: 245px;
 }
 .bike_item {
-border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
