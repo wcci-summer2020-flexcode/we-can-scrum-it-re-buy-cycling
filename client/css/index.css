@@ -1,6 +1,53 @@
 .index_content {
   /*mirror of home_content*/
-  background-image: url(../assets/body2.png);
+  /* background-image: url(../assets/body2.png); */
   background-size: 100%;
   background-repeat: none;
+  background-position: bottom;
+  border-style: solid;
+  border-color: #4f6367;
+  border-width: 0.1em;
+  height: 300px;
+  border-bottom: none;
+}
+
+.index_content {
+  color: #4f6367;
+}
+.index_content h2 {
+  margin: 0;
+  font-size: 50px;
+  color: #fe5f55;
+}
+
+.howItWorks {
+  background-image: url(../assets/howItWorks.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: none;
+  border-style: solid;
+  border-color: #4f6367;
+  border-width: 0.1em;
+  height: 475px;
+  border-bottom: none;
+}
+
+.bikesLink {
+  height: 170px;
+  width: 190px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+}
+
+.sponsors {
+  background-image: url(../assets/CloudBackground.png);
+  background-size: 100%;
+  background-repeat: none;
+  background-position: bottom;
+  border-style: solid;
+  height: 475px;
+  color: #fe5f55;
+  border-color: #4f6367;
 }

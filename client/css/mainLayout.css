@@ -1,5 +1,4 @@
 * {
-
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -11,6 +10,8 @@ html {
 body {
   /*main background color*/
   background-color: #eef5db;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #app {

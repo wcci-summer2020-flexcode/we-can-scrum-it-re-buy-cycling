@@ -17,16 +17,24 @@ buildPage();
 
 function buildPage() {
   header();
-  footer();
   navSupport();
   navOurMission();
   navFAQ();
   navHome();
   navBikes();
   navDonateMoney();
+
+  footer();
+  footerHome();
+  footerOurMission();
+  footerBikes();
+  footerFAQ();
+  footerDonateMoney();
+  footerVolunteer();
+
+  bikesLink();
   checkAlert();
   navResults();
-  carousel();
 }
 
 function header() {
@@ -39,12 +47,9 @@ function footer() {
   footerElem.innerHTML = Footer();
 }
 
-
-
 function navSupport() {
   const supportElm = document.querySelector(".nav-list_support");
   supportElm.addEventListener("click", () => {
-
     if (event.target.classList.contains("nav-list_faq")) {
       const app = document.querySelector("#app");
       app.innerHTML = FAQ();
@@ -55,22 +60,19 @@ function navSupport() {
       const app = document.querySelector("#app");
       app.innerHTML = Volunteer();
       app.addEventListener("click", () => {
-        if(event.target.classList.contains("volunteer-btn")){
-          console.log('Hello!');
+        if (event.target.classList.contains("volunteer-btn")) {
+          console.log("Hello!");
           const app = document.querySelector("#app");
           app.innerHTML = Results();
-
-        }    
-      })
-
+        }
+      });
     }
-  })
+  });
 }
 
 function navDonateMoney() {
   const supportElm = document.querySelector(".nav-list_donate_money");
   const app = document.querySelector("#app");
-
   supportElm.addEventListener("click", () => {
     app.innerHTML = DonateMoney();
   });
@@ -82,14 +84,14 @@ function navDonateMoney() {
       var btn = document.getElementById("myBtn");
       var span = document.getElementsByClassName("close")[0];
 
-      //FORM VARIABLES  
-      var donationConfirmation = document.getElementById('confirmation');
-      var personFirst = document.getElementById('firstName');
-      var donationAmount = document.getElementById('other');
-      var donationThirty = document.getElementById('thirty');
-      var donationFifty = document.getElementById('fifty');
-      var donationHundred = document.getElementById('hundred');
-      var donationOther = document.getElementById('other');
+      //FORM VARIABLES
+      var donationConfirmation = document.getElementById("confirmation");
+      var personFirst = document.getElementById("firstName");
+      var donationAmount = document.getElementById("other");
+      var donationThirty = document.getElementById("thirty");
+      var donationFifty = document.getElementById("fifty");
+      var donationHundred = document.getElementById("hundred");
+      var donationOther = document.getElementById("other");
 
       //FUNCTIONALITY FOR MODAL BOX
       // ;
@@ -109,13 +111,32 @@ function navDonateMoney() {
 
       // CONFIRMATION MESSAGE
       donationConfirmation.innerHTML =
-        personFirst.value + ", thank you for your donation of $" + donationAmount.value + ". For tax purposes, a gift receipt has been emailed to you at " + email.value + ".";
-
-
-
+        personFirst.value +
+        ", thank you for your donation of $" +
+        donationAmount.value +
+        ". For tax purposes, a gift receipt has been emailed to you at " +
+        email.value +
+        ".";
     }
   });
+}
 
+function footerDonateMoney() {
+  const supportElm = document.querySelector(".footerDonateMoney");
+  const app = document.querySelector("#app");
+  supportElm.addEventListener("click", () => {
+    console.log("meow");
+    app.innerHTML = DonateMoney();
+  });
+}
+
+function footerVolunteer() {
+  const supportElm = document.querySelector(".footerVolunteer");
+  const app = document.querySelector("#app");
+  supportElm.addEventListener("click", () => {
+    console.log("meow");
+    app.innerHTML = Volunteer();
+  });
 }
 
 function navOurMission() {
@@ -126,11 +147,17 @@ function navOurMission() {
   });
 }
 
+function footerOurMission() {
+  const ourMissionElm2 = document.querySelector(".footerOurMission");
+  ourMissionElm2.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = OurMission();
+  });
+}
 
 function navFAQ() {
   const faqElm = document.querySelector(".nav-list_faq");
   const app = document.querySelector("#app");
-
   faqElm.addEventListener("click", () => {
     app.innerHTML = FAQ();
   });
@@ -153,6 +180,14 @@ function navFAQ() {
   });
 }
 
+function footerFAQ() {
+  const faqElm = document.querySelector(".footerFAQ");
+  const app = document.querySelector("#app");
+  faqElm.addEventListener("click", () => {
+    app.innerHTML = FAQ();
+  });
+}
+
 function navHome() {
   const homeElm = document.querySelector(".nav-list_home");
   homeElm.addEventListener("click", () => {
@@ -161,9 +196,38 @@ function navHome() {
   });
 }
 
+function footerHome() {
+  const homeElm2 = document.querySelector(".footerHome");
+  homeElm2.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Home();
+  });
+}
+
 function navBikes() {
   const bikeElm = document.querySelector(".nav-list_bikes");
   bikeElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    crud.getRequest("http://localhost:8080/api/bikes", (bikes) => {
+      app.innerHTML = Bikes(bikes);
+    });
+    renderBikeInfo();
+  });
+}
+function bikesLink() {
+  const bikeElm2 = document.querySelector(".bikesLink");
+  bikeElm2.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    crud.getRequest("http://localhost:8080/api/bikes", (bikes) => {
+      app.innerHTML = Bikes(bikes);
+    });
+    renderBikeInfo();
+  });
+}
+
+function footerBikes() {
+  const bikeElm3 = document.querySelector(".footerBikes");
+  bikeElm3.addEventListener("click", () => {
     const app = document.querySelector("#app");
     crud.getRequest("http://localhost:8080/api/bikes", (bikes) => {
       app.innerHTML = Bikes(bikes);
@@ -185,7 +249,6 @@ function renderBikeInfo() {
 }
 
 function checkAlert() {
-
   const app = document.querySelector("#app");
   app.addEventListener("click", () => {
     let filteredBikes = [];
@@ -361,7 +424,5 @@ function checkAlert() {
         });
       });
     }
-
-  }); 
+  });
 }
-
