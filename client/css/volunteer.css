@@ -1,13 +1,18 @@
-.volunteer-title{
-    width: 800px;
-    background-color: #7a9e9f;
-    margin: auto;
-    color: #ffffff;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border-radius: 15px 15px 0px 0px;
-
+.volunteer_Title{
+    background-image: url(../assets/volunteerTitle.png);
+    background-size: 100%;
+    background-repeat: none;
+    background-position: center;
+    border-style: solid;
+    border-color: #4f6367;
+    border-width: 0.1em;
+    height: 100px;
+    color: green;
+    padding: 1em;
+    padding: white;
+    margin-bottom: 1em;
 }
+
 .main{
     background-color: #eef5d8;
     width: 800px;

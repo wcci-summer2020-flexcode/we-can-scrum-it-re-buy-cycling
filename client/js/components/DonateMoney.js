@@ -1,5 +1,8 @@
 export default function navDonateMoney() {
     return `
+    <div class="donateMoney_Title">
+    
+    </div>
 	<div class="donation-container">
 
     <div class="volunteer-title">

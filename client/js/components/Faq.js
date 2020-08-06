@@ -1,6 +1,8 @@
 export default function faq() {
   return `
-    <h1>Frequently Asked Questions</h1>
+  <div class="faq_Title">
+    
+  </div>
    
     <div class ="accordion_menu">
     
