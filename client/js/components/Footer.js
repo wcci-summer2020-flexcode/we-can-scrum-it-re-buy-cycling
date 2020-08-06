@@ -72,9 +72,7 @@ export default function Footer() {
         5678 Main St<br>
             Cleveland, OH 44101 </p>  
         <br><br><br>
-        
         </section>
-
     </footer>
     `;
 }
