@@ -5,16 +5,17 @@
   background-color: #7a9e9f;
   color: white;
   text-align: center;
-  height: 500px;
+  height: 300px;
   width: 100%;
   margin: 0em;
   border-right: none;
   border-left: none;
-  bottom: 0;
+  padding-bottom: 1em;
   width: 100%;
-  right: 0;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 0;
+  overflow: hidden; /* removes space at bottom of footer */
 }
 
 #footer section {
@@ -41,16 +42,16 @@
   color: #4f6367;
 }
 #footer-list-sections {
-  font-size: 18px;
+  font-size: 14px;
 }
 #address {
-  font-size: 18px;
+  font-size: 14px;
 }
 #contact {
-  font-size: 18px;
+  font-size: 14px;
 }
 #subscribe {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .social-list {
@@ -119,9 +120,9 @@ section a:hover {
   margin: 0em;
 }
 
-#join{
-  font-size: 24px;
-
+#join {
+  font-size: 16px;
+}
 
 .submitButton {
   background-color: #eef5db;
@@ -133,9 +134,12 @@ section a:hover {
   padding: 8px;
 }
 
-.submitButton:hover{
+.submitButton:hover {
   color: black;
   text-shadow: -2px 1px 1px white;
   cursor: pointer;
+}
 
+#copyright {
+  font-size: 12px;
 }

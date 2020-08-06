@@ -1,9 +1,9 @@
-
 export default function ourMission() {
   return `
-    <h1>Our Mission</h1>
-    
     <body>
+    <div class="ourMission_title">
+    <p></p>
+  </div>
     <p>Our mission at ReBuycycle is to ease the burden on families by providing an easier way to replace bikes.  We understand the high cost that can be encountered when purchasing bikes year after year for young children that are out growing their bikes every year. </p><br>
     
     <p>With that in mind, ReBuycyle is a resource for parents to utilize and lessen the cost of acquiring new bicycles for their children to enjoy.</p><br>
