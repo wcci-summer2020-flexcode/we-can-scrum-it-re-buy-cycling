@@ -59,7 +59,7 @@ export default function Bikes(bikes) {
               <input type="checkbox" name="Age1215Box"  id="Age1215" value="10">
               <label for="10">Age 12-15</label>
             </div>
-
+                  <br>
                   <button class= "submit">
                     Submit
                   </button>

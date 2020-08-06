@@ -47,7 +47,10 @@ export default function Footer() {
         <p id="join">Join our newsletter to get
         the latest information.</p>
         <input type="email" id="email" name="email">
-        <button type="submit">Subscribe </button> </p>
+        <button 
+            type="submit"
+            class="submitButton">
+            Subscribe </button> </p>
         </form>
 </section>
     <section>
