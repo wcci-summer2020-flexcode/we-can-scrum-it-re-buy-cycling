@@ -52,6 +52,7 @@ export default function Footer() {
             class="submitButton">
             Subscribe </button> </p>
         </form>
+        <p id="copyright">&copy; 2020 We Can {Scrum} IT<p>
 </section>
     <section>
     <h3>Contact Us</h3>
@@ -71,8 +72,8 @@ export default function Footer() {
         <br>
         5678 Main St<br>
             Cleveland, OH 44101 </p>  
-        <br><br><br>
-        <p>&copy; 2020 We Can {Srum} IT<p>
+    
+
         </section>
     </footer>
     `;
