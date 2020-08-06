@@ -79,14 +79,26 @@ function navDonateMoney() {
 
   // MODAL FUNCTIONALITY
   app.addEventListener("click", () => {
+    if (event.target.classList.contains("amount-button_thirty")) {
+      var donationAmount = 30;
+      support.innerHTML = "Purchases safety gear for one child.";
+    }
+    if (event.target.classList.contains("amount-button_fifty")) {
+      var donationAmount = 50;
+      support.innerHTML = "Restores two bikes for children in our community.";
+    }
+    if (event.target.classList.contains("amount-button_hundred")) {
+      var donationAmount = 100;
+      support.innerHTML = "Purchases two new bikes for the program.";
+    }
     if (event.target.classList.contains("donate-button")) {
       var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
       var span = document.getElementsByClassName("close")[0];
 
       //FORM VARIABLES
       var donationConfirmation = document.getElementById("confirmation");
       var personFirst = document.getElementById("firstName");
+      var email = document.getElementById("email");
       var donationAmount = document.getElementById("other");
       var donationThirty = document.getElementById("thirty");
       var donationFifty = document.getElementById("fifty");
@@ -94,10 +106,8 @@ function navDonateMoney() {
       var donationOther = document.getElementById("other");
 
       //FUNCTIONALITY FOR MODAL BOX
-      // ;
-      // btn.onclick = function () {
+
       modal.style.display = "block";
-      // };
 
       span.onclick = function () {
         modal.style.display = "none";
@@ -170,10 +180,10 @@ function navFAQ() {
       for (i = 0; i < acc.length; i++) {
         event.target.classList.toggle("active");
         var panel = event.target.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
         } else {
-          panel.style.display = "block";
+          panel.style.maxHeight = panel.scrollHeight + "px";
         }
       }
     }
