@@ -1,4 +1,12 @@
-import missionbike1 from "../../assets/mission-bike1.jpg";
+import letsmove from "../../assets/sponsors/lets-move-converted.png";
+import ODH from "../../assets/sponsors/ODH+logo.png";
+import careSource from "../../assets/sponsors/caresource.png";
+import huntington from "../../assets/sponsors/Huntington Logo.png";
+import unitedWay from "../../assets/sponsors/United-Way-Logo.png";
+import dicks from "../../assets/sponsors/dicks.png";
+import huffy from "../../assets/sponsors/Huffybicycleslogo.png";
+import chase from "../../assets/sponsors/chase.png";
+import medicalMutual from "../../assets/sponsors/medical-mutual-logo.png";
 
 export default function home() {
   return `
@@ -22,22 +30,22 @@ export default function home() {
       <br>
       <div class="sponsors_scroll"></div>
       <a href="https://letsmove.obamawhitehouse.archives.gov/" target="_blank"><img class="sponsor_logo"
-      src="${missionbike1}"  /></a>
+      src="${letsmove}"  /></a>
       <a href="https://odh.ohio.gov/wps/portal/gov/odh/home" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/ODH+logo.png" /></a>
+          src="${ODH}" /></a>
       <!-- <a href="https://www.caresource.com/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/caresource.png" /></a> -->
+          src="${careSource}" /></a> -->
       <a href="https://www.huntington.com/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/Huntington Logo.png" /></a>
+          src="${huntington}" /></a>
       <a href="https://www.unitedwaycleveland.org/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/United-Way-Logo.png" /></a>
+          src="${unitedWay}" /></a>
       <a href="https://www.dickssportinggoods.com/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/dicks.png" /></a>
+          src="${dicks}" /></a>
       <a href="https://https://www.huffybikes.com/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/Huffybicycleslogo.png" /></a>
-      <a href="https://www.chase.com/" target="_blank"><img class="sponsor_logo" src="/assets/sponsors/chase.png" /></a>
+          src="${huffy}" /></a>
+      <a href="https://www.chase.com/" target="_blank"><img class="sponsor_logo" src="${chase}" /></a>
       <a href="https://www.medmutual.com/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/medical-mutual-logo.png" /></a>
+          src="${medicalMutual}" /></a>
 
     </div>
   </div>
