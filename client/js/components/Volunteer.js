@@ -2,10 +2,10 @@ import body_image from "../../assets/body.jpg";
 export default function navVolunteer() {
   return `
 
+  <div class="volunteer_Title">
+    
+  </div>
 
-<body>
-
-<div class="volunteer-title"><h1>Volunteer Registration</h1></div>
 <div class="main">
 <form id="volunteer">
 <div class="form-div">
@@ -53,9 +53,9 @@ Provide details on hours available</textarea><br><br>
 </div>
 </form>
 </div>
-<body>
 
-</html>
+
+
 
   `;
 }

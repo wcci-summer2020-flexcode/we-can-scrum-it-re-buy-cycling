@@ -25,6 +25,7 @@
   border-width: 1px;
   border-top: none;
   border-left: none;
+  border-bottom: none;
 }
 
 .CheckBoxSection {
@@ -38,6 +39,7 @@
   grid-template-areas: ".";
   text-align: left;
   padding: 1em;
+  border-bottom: none;
 }
 
 .CheckBoxSection h2 {
@@ -52,6 +54,7 @@
   border-left: none;
   border-bottom: none;
   border-right: none;
+  border-top: none;
 }
 
 .bikes-list {

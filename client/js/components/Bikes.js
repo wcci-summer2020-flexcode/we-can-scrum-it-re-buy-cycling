@@ -1,12 +1,14 @@
 export default function Bikes(bikes) {
   return `
- 
-    <h1>Search Our Bikes</h1>
+  <div class="bikes_Title">
+    
+  </div>
+
     <div class="grid-container">
       <div class="sidebar">
         <div class="CheckBoxSection">
             
-            <h2> Shops</h2>
+            <h2>Location</h2>
             
             <div> 
               <input type="checkbox"  name="ColumbusBox" id="Columbus" value="1"/>
@@ -34,10 +36,10 @@ export default function Bikes(bikes) {
               <label for="5">Neutral</label>
             </div>
               
-            <h2> Suggested Age Range</h2>
+            <h2>Age</h2>
             <div>
               <input type="checkbox" name="12-24 Months"id="Age1224" value="6">  
-              <label for="6">Age 12-24 Months </label>
+              <label for="6">Months 12-24 </label>
             </div>
 
             <div>

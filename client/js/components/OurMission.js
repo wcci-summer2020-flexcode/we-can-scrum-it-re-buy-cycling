@@ -1,7 +1,6 @@
 import missionbike1 from "../../assets/mission-bike1.jpg";
 import missionbike2 from "../../assets/mission-bike2.jpg";
 import missionbike3 from "../../assets/mission-bike3.jpg";
-import ourMissionTitle from "../../assets/ourMissionTitle.png";
 
 export default function ourMission() {
   return `
