@@ -1,6 +1,6 @@
 .volunteer-title{
     width: 800px;
-    background-color: rgb(0,0,0,6);
+    background-color: #7a9e9f;
     margin: auto;
     color: #ffffff;
     padding: 10px 0px 10px 0px;
@@ -9,9 +9,11 @@
 
 }
 .main{
-    background-color: rgb(0,0,0,0.5);
+    background-color: #eef5d8;
     width: 800px;
     margin: auto;
+    
+    
 }
 form{
     padding: 10px;
@@ -24,11 +26,11 @@ form{
 
 
 #weekdays{
-    color: snow;
+    color: black;
 }
 #submit{
     width: 20em;
     height: 3em;
-    background-color: goldenrod; 
+    background-color: #fe5f55; 
 }
 
