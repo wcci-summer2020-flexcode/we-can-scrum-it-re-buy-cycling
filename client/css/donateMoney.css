@@ -14,12 +14,70 @@
   }
 
 .donation-container {
-	height: 400px;
+	height: 500px;
 	width: 90%;
 	font-size: 20px;
 	padding: 24px;
 	margin: 30px auto 30px auto;
 	background-color: beige;
+}
+.amount-button_thirty {
+	font-size: 1.5em;
+	width: 5em;
+    height: 3em;
+	font-weight: bold;
+    background-color:  #fe5f55;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+	margin-top: 8px;
+	cursor: pointer;
+	padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+.amount-button_fifty {
+	font-size: 1.5em;
+	width: 5em;
+    height: 3em;
+	font-weight: bold;
+    background-color:  #fe5f55;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+	margin-top: 8px;
+	cursor: pointer;
+	padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+.amount-button_hundred{
+	font-size: 1.5em;
+	width: 5em;
+    height: 3em;
+	font-weight: bold;
+    background-color: #fe5f55;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+	margin-top: 8px;
+	cursor: pointer;
+	padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+.support{
+	font-size: 1.25em;
+	font-weight: bold;
 }
 .personal-info{
 
@@ -43,9 +101,19 @@
 }
 
 .donate-button {
-	font-size: 1em;
+	font-size: 1.5em;
 	width: 20em;
     height: 3em;
-    background-color: #fe5f55;
-
+	background-color: #fe5f55;
+	cursor: pointer;
+	font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+	margin-top: 8px;
+	padding: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
 }

@@ -79,9 +79,20 @@ function navDonateMoney() {
 
   // MODAL FUNCTIONALITY
   app.addEventListener("click", () => {
+    if (event.target.classList.contains("amount-button_thirty")) {
+      var donationAmount = 30;
+      support.innerHTML = "Purchases safety gear for one child.";
+    }
+    if (event.target.classList.contains("amount-button_fifty")) {
+      var donationAmount = 50;
+      support.innerHTML = "Restores two bikes for children in our community.";
+    }
+    if (event.target.classList.contains("amount-button_hundred")) {
+      var donationAmount = 100;
+      support.innerHTML = "Purchases two new bikes for the program.";
+    }
     if (event.target.classList.contains("donate-button")) {
       var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
       var span = document.getElementsByClassName("close")[0];
 
       //FORM VARIABLES
