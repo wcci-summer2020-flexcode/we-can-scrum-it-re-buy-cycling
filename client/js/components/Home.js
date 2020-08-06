@@ -1,3 +1,4 @@
+import missionbike1 from "../../assets/mission-bike1.jpg";
 
 export default function home() {
   return `
@@ -21,7 +22,7 @@ export default function home() {
       <br>
       <div class="sponsors_scroll"></div>
       <a href="https://letsmove.obamawhitehouse.archives.gov/" target="_blank"><img class="sponsor_logo"
-          src="/assets/sponsors/lets-move-converted.png" /></a>
+      src="${missionbike1}"  /></a>
       <a href="https://odh.ohio.gov/wps/portal/gov/odh/home" target="_blank"><img class="sponsor_logo"
           src="/assets/sponsors/ODH+logo.png" /></a>
       <!-- <a href="https://www.caresource.com/" target="_blank"><img class="sponsor_logo"
