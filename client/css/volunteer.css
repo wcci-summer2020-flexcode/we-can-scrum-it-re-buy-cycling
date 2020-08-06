@@ -11,22 +11,41 @@
 .main{
     background-color: #eef5d8;
     width: 800px;
-    margin: auto;
+    margin-left: 130px;
     
     
 }
 form{
     padding: 10px;
 }
-
-#name{
-    width: 100%;
-    
+#volunteer{
+    display: inline;
+    margin-right: 0em;
 }
+.label{
+    display: inline-block;
+    float: center;
+    width: 10em;
+    text-align: right;
+    margin-left: .5em;
+}
+
+/* #name{
+    width: 50%;
+    margin-left: .5em;
+    
+} */
 
 
 #weekdays{
     color: black;
+    margin-left: 220px;
+}
+.days{
+    font-size: 20px;
+}
+#weekday{
+    font-size: 16px;
 }
 #submit{
     width: 20em;

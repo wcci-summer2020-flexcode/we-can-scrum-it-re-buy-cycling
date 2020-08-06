@@ -14,16 +14,16 @@ export default function navResults() {
     <br>
   
     <a href="http://www.projectfitamerica.org/index.html">
-<img class="page-image" alt="pfa" src="${projectfitamerica}" width="100" height="100">
+<img class="page-image" alt="pfa" src="${projectfitamerica}" width="800" height="150">
 </a>
 <br><br>
 <a href="https://www.ohioathletics.com/">
-<img class="page-image" alt="oac" src="${oac}" width="100" height="100">
+<img class="page-image" alt="oac" src="${oac}" width="800" height="150">
 </a>
 <br><br>
 <p id="unitedway">United Way<br>
 <a href="https://www.unitedway.org/">
-<img class="page-image" alt="oac" src="${unitedway}" width="100" height="100">
+<img class="page-image" alt="oac" src="${unitedway}" width="800" height="200">
 </a>
    </p> 
 
