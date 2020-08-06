@@ -22,7 +22,7 @@ export default function Footer() {
         <div class="footerVolunteer"> Volunteer</div>
         <br><br><br><br>
         </section>
-    <section><h3>Subscribe</h3><br>
+    <section><h3>Subscribe</h3>
     <ul class='social-list'>
     <a href="https://www.facebook.com/" 
         class="fa fa-facebook"
@@ -52,12 +52,9 @@ export default function Footer() {
 </section>
     <section>
     <h3>Contact Us</h3>
-   
     <a href="tel:"> 1.844.932.2626</a>
     <br>
-    <br>
     <a href="mailto:rebuycycling@gmail.com">rebuycycling@gmail.com </a>
-    <br>
     <br>
     
     <p id="address"> 
@@ -72,6 +69,7 @@ export default function Footer() {
         5678 Main St<br>
             Cleveland, OH 44101 </p>  
         <br><br><br>
+        <p>&copy; 2020 We Can {Srum} IT<p>
         </section>
     </footer>
     `;
