@@ -28,3 +28,22 @@ body {
   margin-right: auto;
   margin-bottom: 0em;
 }
+
+.mission-image1{
+  float: right;
+  margin: 10px;
+  width: 300px;
+ 
+}
+.mission-image2{
+  float: left;
+  margin: 10px;
+  width: 300px;
+ 
+}
+.mission-image3{
+  float: right;
+  margin: 10px;
+  width: 300px;
+ 
+}
