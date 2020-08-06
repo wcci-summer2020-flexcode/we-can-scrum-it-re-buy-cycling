@@ -54,3 +54,20 @@
 .bike_item {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
+
+.submit {
+  background-color: #4f6367;
+  color: white;
+  border-color:white;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 8px;
+
+}
+
+.submit:hover{
+  color: black;
+  text-shadow: -2px 2px 2px white;
+  cursor: pointer;
+}
