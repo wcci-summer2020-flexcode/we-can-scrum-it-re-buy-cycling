@@ -6,8 +6,6 @@ import missionbike3 from "../../assets/mission-bike3.jpg";
 
 export default function ourMission() {
   return `
-    <h1>Our Mission</h1>
-    
     <body>
    
     <p id="missionp1"> <img class="mission-image1" src="${missionbike1}" alt="bike">Our mission at ReBuycycle is to ease the burden on families by providing an easier way to replace bikes.  We understand the high cost that can be encountered when purchasing bikes year after year for young children that are out growing their bikes every year. </p><br><br>

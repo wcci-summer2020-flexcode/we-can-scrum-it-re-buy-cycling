@@ -6,6 +6,10 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list";
+  border-color: #fe5f55;
+  border-style: solid;
+  border-width: 1px;
+  padding-right: 1em;
 }
 
 .sidebar {
@@ -16,6 +20,11 @@
   gap: 1px 1px;
   grid-template-areas: "CheckBoxSection" "BLANK";
   grid-area: sidebar;
+  border-color: #fe5f55;
+  border-style: solid;
+  border-width: 1px;
+  border-top: none;
+  border-left: none;
 }
 
 .CheckBoxSection {
@@ -30,9 +39,19 @@
   text-align: left;
   padding: 1em;
 }
+
+.CheckBoxSection h2 {
+  color: #fe5f55
+}
 .BLANK {
   display: grid;
   grid-area: BLANK;
+  border-color: #fe5f55;
+  border-style: solid;
+  border-width: 1px;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
 }
 
 .bikes-list {
@@ -47,10 +66,40 @@
   list-style-type: none;
 }
 
+.bikes-list p{
+  font-size: 16px;
+}
+
 .bike_image {
   height: 250px;
   width: 245px;
+  border-color: #fe5f55;
+  border-style: solid;
+  border-width: 1px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
 }
 .bike_item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-color: #fe5f55;
+  border-style: solid;
+  border-width: 1px;
 }
+
+.submit {
+  background-color: #4f6367;
+  color: white;
+  border-color:white;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 8px;
+
+}
+
+.submit:hover{
+  color: black;
+  text-shadow: -2px 2px 2px white;
+  cursor: pointer;
+}
+
