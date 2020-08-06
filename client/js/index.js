@@ -87,6 +87,7 @@ function navDonateMoney() {
       //FORM VARIABLES
       var donationConfirmation = document.getElementById("confirmation");
       var personFirst = document.getElementById("firstName");
+      var email = document.getElementById("email");
       var donationAmount = document.getElementById("other");
       var donationThirty = document.getElementById("thirty");
       var donationFifty = document.getElementById("fifty");
@@ -94,10 +95,8 @@ function navDonateMoney() {
       var donationOther = document.getElementById("other");
 
       //FUNCTIONALITY FOR MODAL BOX
-      // ;
-      // btn.onclick = function () {
+
       modal.style.display = "block";
-      // };
 
       span.onclick = function () {
         modal.style.display = "none";
@@ -170,10 +169,10 @@ function navFAQ() {
       for (i = 0; i < acc.length; i++) {
         event.target.classList.toggle("active");
         var panel = event.target.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
         } else {
-          panel.style.display = "block";
+          panel.style.maxHeight = panel.scrollHeight + "px";
         }
       }
     }

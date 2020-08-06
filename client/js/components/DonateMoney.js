@@ -6,13 +6,14 @@ export default function navDonateMoney() {
 	<div class="donation-container">
 
     <div class="volunteer-title">
-        <h1>Make a Donation</h1>
     </div>
-    <div class="main">
+    <div class="donate-main">
         <form name="donation form" id="donate_frm" action="#">
-            <div id="personal-info">
-                <label class="personal-info_label">First Name</label>
-                <input class="firstname" type="text" name="first_name" id="firstName"><br>
+            <div id="personal-info" class="personal-info">
+            <label class="personal-info_label">Donation Amount</label>
+				<input class="set-amount" type="text" name="amount" id="other"><br>
+                <label class="personal-info_label">First Name
+                <input class="firstname" type="text" name="first_name" id="firstName"></label><br>
                 <label class="personal-info_label">Last Name</label>
                 <input class="lastname" type="text" name="last_name" id="lastName"><br>
                 <label class="personal-info_label">Address</label>
@@ -25,8 +26,7 @@ export default function navDonateMoney() {
                 <input class="phone" type="text" name="phone" id="phone"><br>
                 <label class="personal-info_label">Email</label>
 				<input class="email" type="text" name="email" id="email"><br>
-				<label class="personal-info_label">Donation Amount</label>
-				<input class="set-amount" type="text" name="amount" id="other"><br>
+				
 
             </div>
 
