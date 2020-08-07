@@ -20,6 +20,8 @@
 	padding: 24px;
 	margin: 30px auto 30px auto;
 	background-color: beige;
+	border-style: solid;
+	border-color: #fe5f55;
 }
 .amount-button_thirty {
 	font-size: 1.5em;

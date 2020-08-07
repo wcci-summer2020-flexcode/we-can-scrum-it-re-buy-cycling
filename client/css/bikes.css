@@ -98,12 +98,12 @@
   height: 250px;
   width: 245px;
   padding-top: 20px;
-  border-color: #fe5f55;
-  border-style: solid;
-  border-width: 1px;
-  border-right: none;
+  /* border-color: #fe5f55; */
+  /* border-style: solid;
+  border-width: 1px; */
+  /* border-right: none;
   border-left: none;
-  border-top: none;
+  border-top: none; */
 }
 .bike_item {
   background-color: #eef5db;
@@ -129,3 +129,6 @@
   cursor: pointer;
 }
 
+.checkbox {
+    cursor: pointer;
+}
