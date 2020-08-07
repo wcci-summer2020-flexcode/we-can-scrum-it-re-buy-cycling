@@ -6,6 +6,8 @@ export default function Bikes(bikes) {
   </div>
 
     <div class="grid-container">
+
+    
       <div class="sidebar">
         <div class="CheckBoxSection">
             
