@@ -75,59 +75,57 @@ function navDonateMoney() {
   const app = document.querySelector("#app");
   supportElm.addEventListener("click", () => {
     app.innerHTML = DonateMoney();
-  });
 
-  // MODAL FUNCTIONALITY
-  app.addEventListener("click", () => {
-    if (event.target.classList.contains("amount-button_thirty")) {
-      var donationAmount = 30;
-      support.innerHTML = "Purchases safety gear for one child.";
-    }
-    if (event.target.classList.contains("amount-button_fifty")) {
-      var donationAmount = 50;
-      support.innerHTML = "Restores two bikes for children in our community.";
-    }
-    if (event.target.classList.contains("amount-button_hundred")) {
-      var donationAmount = 100;
-      support.innerHTML = "Purchases two new bikes for the program.";
-    }
-    if (event.target.classList.contains("donate-button")) {
-      var modal = document.getElementById("myModal");
-      var span = document.getElementsByClassName("close")[0];
+    //should give donation message and assign value for donation
+    app.addEventListener("click", () => {
+      if (event.target.classList.contains("amount-button_thirty")) {
+        const donationAmount = 30;
+        support.innerHTML = "Purchases safety gear for one child.";
+      } else if (event.target.classList.contains("amount-button_fifty")) {
+        const donationAmount = 50;
+        support.innerHTML = "Restores two bikes for children in our community.";
+      } else if (event.target.classList.contains("amount-button_hundred")) {
+        const donationAmount = 100;
+        support.innerHTML = "Purchases two new bikes for the program.";
+      } else if (event.target.classList.contains("amount-other")) {
+        const donationAmount = document.getElementById("other");
+        support.innerHTML = "Thank you for supporting our little bikers!";
+      }
+    }, false);
 
-      //FORM VARIABLES
-      var donationConfirmation = document.getElementById("confirmation");
-      var personFirst = document.getElementById("firstName");
-      var email = document.getElementById("email");
-      var donationAmount = document.getElementById("other");
-      var donationThirty = document.getElementById("thirty");
-      var donationFifty = document.getElementById("fifty");
-      var donationHundred = document.getElementById("hundred");
-      var donationOther = document.getElementById("other");
+    //upon click of "donate" button, should pull user input from personal info along with donation value into modal
+    app.addEventListener("click", () => {
+      if (event.target.classList.contains("donate-button")) {
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        var donationConfirmation = document.getElementById("confirmation");
+        var personFirst = document.getElementById("firstName");
+        var email = document.getElementById("email");
+        var donationAmount;
+        //FUNCTIONALITY FOR MODAL BOX
 
-      //FUNCTIONALITY FOR MODAL BOX
+        modal.style.display = "block";
 
-      modal.style.display = "block";
-
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      window.onclick = function (event) {
-        if (event.target == modal) {
+        span.onclick = function () {
           modal.style.display = "none";
-        }
-      };
+        };
 
-      // CONFIRMATION MESSAGE
-      donationConfirmation.innerHTML =
-        personFirst.value +
-        ", thank you for your donation of $" +
-        donationAmount.value +
-        ". For tax purposes, a gift receipt has been emailed to you at " +
-        email.value +
-        ".";
-    }
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+
+        // CONFIRMATION MESSAGE IN MODAL
+        donationConfirmation.innerHTML =
+          personFirst.value +
+          ", thank you for your donation of $" +
+          donationAmount +
+          ". For tax purposes, a gift receipt has been emailed to you at " +
+          email.value +
+          ".";
+      }
+    }, false);
   });
 }
 

@@ -1,5 +1,9 @@
 export default function Bike(bike) {
     return `
+    <div class="bikes_Title">
+  
+  </div>
+   <div class="bike-container">
     <h1>
     ${bike.brandName}
     </h1>
@@ -14,7 +18,7 @@ export default function Bike(bike) {
     ${bike.currentStatus}
     </h3>
     
-    <img src="${bike.imageUrl}"/>
+    <img class="bike-page_image" src="${bike.imageUrl}"/>
     
     <h3>
     Bicycle Type:
@@ -45,6 +49,6 @@ export default function Bike(bike) {
     Donated By:
     ${bike.donatedBy}
     </h3>
-   
+   </div>
     `;
 }
