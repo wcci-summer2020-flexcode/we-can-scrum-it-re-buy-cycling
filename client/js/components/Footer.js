@@ -5,9 +5,7 @@ export default function Footer() {
     <section>
     <h3>Re-Buy-Cycling</h3>
     <ul id="footer-list-sections">
-        <div class ="footerHome">
-            Home
-        </div>
+        <div class ="footerHome">Home</div>
         <br>
         <div class ="footerOurMission"> Our Mission </div>
         <br>
