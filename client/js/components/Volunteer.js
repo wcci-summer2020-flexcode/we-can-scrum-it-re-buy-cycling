@@ -28,7 +28,7 @@ export default function navVolunteer() {
 <label class="label">Employer</label>
 <input class="name" type="text" name="employer"><br>
 <label class="label">Position</label>
-<input class="name" type="text" name="position"><br><br>
+<input class="name" type="text" name="position"><br>
 <div id="weekdays">
 <p class="days">Days Available</p>
 <input type="checkbox" id="weekday" name="monday" value="Monday">
@@ -44,8 +44,8 @@ name="thursday" value="thursday">
 <label id="weekday">Friday</label><br>
 <p>Time Availability</p>
 <textarea rows="5" cols="50" name="description">
-Provide details on hours available</textarea><br><br>
-<input class="volunteer-btn" type="submit" id="submit" value="submit" /><br><br>
+Provide details on hours available</textarea><br>
+<input class="volunteer-btn" type="submit" id="submit" value="SUBMIT" /><br><br>
 
   </div>
 </div>

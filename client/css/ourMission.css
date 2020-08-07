@@ -12,3 +12,59 @@
   padding: white;
   margin-bottom: 1em;
 }
+
+#missionp1{
+  border: 3px black solid;
+  width: 70%;
+  border-radius: 20px/10px;
+  box-shadow: 6px 6px 0px black;
+  background-color: #fe5f55;
+  color: white;
+}
+#missionp2{
+  float: right;
+  border: 3px black solid;
+  width: 70%;
+  border-radius: 20px/10px;
+  box-shadow: 6px 6px 0px black;
+  background-color: #fe5f55;
+  color: white;
+}
+#missionp3{
+  float: left;
+  border: 3px black solid;
+  width: 70%;
+  border-radius: 20px/10px;
+  box-shadow: 6px 6px 0px black;
+  background-color: #fe5f55;
+  color: white;
+}
+
+.mission-image1{
+  float: right;
+  /* margin: 0px; */
+  width: 250px;
+  margin-top: -150px;
+  margin-right: 100px;
+  border: 3px #fe5f55 solid;
+ 
+}
+.mission-image2{
+  float: left;
+  width: 250px;
+  border: 3px #fe5f55 solid;
+  margin-top: 25px;
+  margin-left: 100px;
+ 
+}
+.mission-image3{
+  float: right;
+  margin: 10px;
+  width: 250px;
+  border: 3px #fe5f55 solid;
+  margin-top: 25px;
+  margin-right: 100px;
+}
+.missionbody{
+  /* background-color: #b8d8d8; */
+}
