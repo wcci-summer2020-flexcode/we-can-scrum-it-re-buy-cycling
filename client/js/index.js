@@ -35,6 +35,7 @@ function buildPage() {
   bikesLink();
   checkAlert();
   navResults();
+  topFunction();
 }
 
 function header() {
@@ -47,23 +48,31 @@ function footer() {
   footerElem.innerHTML = Footer();
 }
 
+function topFunction(){
+  document.documentElement.scrollTop = 0;
+}
+
 function navSupport() {
   const supportElm = document.querySelector(".nav-list_support");
   supportElm.addEventListener("click", () => {
     if (event.target.classList.contains("nav-list_faq")) {
       const app = document.querySelector("#app");
       app.innerHTML = FAQ();
+      topFunction();
     } else if (event.target.classList.contains("nav-list_donate_money")) {
       const app = document.querySelector("#app");
       app.innerHTML = DonateMoney();
+      topFunction();
     } else if (event.target.classList.contains("nav-list_volunteer")) {
       const app = document.querySelector("#app");
       app.innerHTML = Volunteer();
+      topFunction();
       app.addEventListener("click", () => {
         if (event.target.classList.contains("volunteer-btn")) {
           console.log("Hello!");
           const app = document.querySelector("#app");
           app.innerHTML = Results();
+          topFunction();
         }
       });
     }
@@ -75,6 +84,7 @@ function navDonateMoney() {
   const app = document.querySelector("#app");
   supportElm.addEventListener("click", () => {
     app.innerHTML = DonateMoney();
+    topFunction();
 
     //should give donation message AND assign value for donationAmount
     app.addEventListener("click", () => {
@@ -135,6 +145,7 @@ function footerDonateMoney() {
   supportElm.addEventListener("click", () => {
     console.log("meow");
     app.innerHTML = DonateMoney();
+    topFunction();
   });
 }
 
@@ -144,6 +155,7 @@ function footerVolunteer() {
   supportElm.addEventListener("click", () => {
     console.log("meow");
     app.innerHTML = Volunteer();
+    topFunction();
   });
 }
 
@@ -152,6 +164,7 @@ function navOurMission() {
   ourMissionElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = OurMission();
+    topFunction();
   });
 }
 
@@ -160,6 +173,7 @@ function footerOurMission() {
   ourMissionElm2.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = OurMission();
+    topFunction();
   });
 }
 
@@ -168,6 +182,7 @@ function navFAQ() {
   const app = document.querySelector("#app");
   faqElm.addEventListener("click", () => {
     app.innerHTML = FAQ();
+    topFunction();
   });
 
   app.addEventListener("click", () => {
@@ -193,6 +208,7 @@ function footerFAQ() {
   const app = document.querySelector("#app");
   faqElm.addEventListener("click", () => {
     app.innerHTML = FAQ();
+    topFunction();
   });
 }
 
@@ -201,6 +217,7 @@ function navHome() {
   homeElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Home();
+    topFunction();
   });
 }
 
@@ -209,6 +226,7 @@ function footerHome() {
   homeElm2.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Home();
+    topFunction();
   });
 }
 
@@ -220,6 +238,7 @@ function navBikes() {
       app.innerHTML = Bikes(bikes);
     });
     renderBikeInfo();
+    topFunction();
   });
 }
 function bikesLink() {
@@ -230,6 +249,7 @@ function bikesLink() {
       app.innerHTML = Bikes(bikes);
     });
     renderBikeInfo();
+    topFunction();
   });
 }
 
@@ -241,6 +261,7 @@ function footerBikes() {
       app.innerHTML = Bikes(bikes);
     });
     renderBikeInfo();
+    topFunction();
   });
 }
 

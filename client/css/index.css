@@ -26,23 +26,22 @@
   margin-bottom: 1em;
 }
 
+.donateABikeLink {
+  height: 170px;
+  width: 190px;
+  z-index: 1;
+  margin-left: 280px;
+  margin-top: 12em;
+  cursor: pointer;
+}
+
 .bikesLink {
   height: 170px;
   width: 190px;
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 12em;
-  cursor: pointer;
-}
-
-.donateABikeLink {
-  height: 170px;
-  width: 190px;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12em;
+  margin-top: -7em;
   cursor: pointer;
 }
 
