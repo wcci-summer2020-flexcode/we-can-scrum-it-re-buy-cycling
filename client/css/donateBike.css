@@ -1,0 +1,14 @@
+.donateBike_Title {
+    background-image: url(../assets/);
+    background-size: 100%;
+    background-repeat: none;
+    background-position: center;
+    border-style: solid;
+    border-color: #4f6367;
+    border-width: 0.1em;
+    height: 100px;
+    color: green;
+    padding: 1em;
+    padding: white;
+    margin-bottom: 1em;
+  }

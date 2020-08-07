@@ -12,7 +12,9 @@ import DonateMoney from "./components/DonateMoney";
 import DonateBike from "./components/DonateBike";
 import Volunteer from "./components/Volunteer";
 import Results from "./components/results";
+import Results2 from "./components/results2";
 import navResults from "./components/results";
+import navResults2 from "./components/results2";
 
 buildPage();
 
@@ -38,6 +40,7 @@ function buildPage() {
   bikesLink();
   checkAlert();
   navResults();
+  navResults2();
   topFunction();
 }
 
@@ -51,7 +54,7 @@ function footer() {
   footerElem.innerHTML = Footer();
 }
 
-function topFunction(){
+function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
@@ -61,7 +64,7 @@ function navSupport() {
     if (event.target.classList.contains("nav-list_faq")) {
       const app = document.querySelector("#app");
       app.innerHTML = FAQ();
-      topFunction();
+
     } else if (event.target.classList.contains("nav-list_donate_money")) {
       const app = document.querySelector("#app");
       app.innerHTML = DonateMoney();
@@ -69,18 +72,30 @@ function navSupport() {
     } else if (event.target.classList.contains("nav-list_donate_bike")) {
       const app = document.querySelector("#app");
       app.innerHTML = DonateBike();
-      topFunction();
+
+      app.addEventListener("click", () => {
+        if (event.target.classList.contains("donate-bike-button")) {
+          console.log("Hello!");
+          const app = document.querySelector("#app");
+          app.innerHTML = Results2();
+        }
+        else if (event.target.classList.contains("donate-bike-button")) {
+          console.log("Hello!");
+          const app = document.querySelector("#app");
+          app.innerHTML = Results2();
+        }
+      });
+
 
     } else if (event.target.classList.contains("nav-list_volunteer")) {
       const app = document.querySelector("#app");
       app.innerHTML = Volunteer();
-      topFunction();
+
       app.addEventListener("click", () => {
         if (event.target.classList.contains("volunteer-btn")) {
           console.log("Hello!");
           const app = document.querySelector("#app");
           app.innerHTML = Results();
-          topFunction();
         }
         else if (event.target.classList.contains("volunteer-btn")) {
           console.log("Hello!");

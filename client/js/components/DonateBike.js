@@ -1,4 +1,3 @@
-import body_image from "../../assets/body.jpg";
 export default function navDonateBike() {
   return `
   <div class="donateMoney_Title">
@@ -24,7 +23,7 @@ export default function navDonateBike() {
 
           </div>
 
-          <button class="donate-button" id="myBtn"> Donate Now</button>
+          <button class="donate-bike-button" id="myBtn"> Donate Now</button>
             
           <div id="myModal" class="modal">
         <div class="modal-content">
@@ -42,5 +41,6 @@ export default function navDonateBike() {
     <script src="./js/DonationForm.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+    
        `;
 }
