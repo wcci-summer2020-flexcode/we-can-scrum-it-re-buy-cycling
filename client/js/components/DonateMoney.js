@@ -9,13 +9,13 @@ export default function navDonateMoney() {
     </div>
     <div class="donate-main">
         <form name="donation form" id="donate_frm" action="#">
-        <div class="donation-options">
-        <button class="amount-button_thirty" id="thirty" value="30"> $30</button>
-        <button class="amount-button_fifty" id="fifty" value="50"> $50</button>
-        <button class="amount-button_hundred" id="hundred" value="100"> $100 </button> 
-        <button class="amount-other">Other<input class="custom" type="text" name="amount" id="custom"></button>
-        <p id="support" class="support"></p>
-        </div>
+            <span class="donation-options">
+                <button class="amount-button_thirty" id="thirty" value="30"> $30</button>
+                <button class="amount-button_fifty" id="fifty" value="50"> $50</button>
+                <button class="amount-button_hundred" id="hundred" value="100"> $100 </button> 
+                <span class="amount-other">Other<input class="custom" type="text" name="amount" id="custom"></span>
+                <p id="support" class="support"></p>
+            </span>
             <div id="personal-info" class="personal-info">
                
                 <label class="personal-info_label">First Name</label>
@@ -38,7 +38,7 @@ export default function navDonateMoney() {
 
 			<button class="donate-button" id="myBtn"> Donate Now</button>
             
-		<div id="myModal" class="modal">
+		    <div id="myModal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<p id="confirmation"></p>
