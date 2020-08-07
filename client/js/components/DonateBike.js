@@ -9,16 +9,28 @@ export default function navDonateBike() {
   <div class="donate-main">
       <form name="donation form" id="donate_frm" action="#">
           
-          <div id="personal-info" class="personal-info">
-             
-              <label class="personal-info_label">User Name</label>
-              <input class="username" type="text" name="first_name" id="username"><br>
-              <label class="personal-info_label">Email Address</label>
-              <input class="email" type="text" name="last_name" id="email"><br>
-              <label class="personal-info_label">Password</label>
-              <input class="password" type="text" name="password" id="password"><br>
-              <label class="personal-info_label">Confirm Password</label>
-              <input class="password2" type="text" name="password2" id="password2"><br>
+          <div id="personal-info" class="personal-info"> 
+          <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+        
+        </div>
+        <div class="form-control">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="Enter email" />
+         
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+        
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
 
 
           </div>
