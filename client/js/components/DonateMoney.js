@@ -10,10 +10,10 @@ export default function navDonateMoney() {
     <div class="donate-main">
         <form name="donation form" id="donate_frm" action="#">
         <div class="donation-options">
-        <button class="amount-button_thirty" id="thirty"> $30</button>
-        <button class="amount-button_fifty" id="fifty"> $50</button>
-        <button class="amount-button_hundred" id="hundred"> $100 </button> 
-        <button class="amount-other">Other<input class="set-amount" type="text" name="amount" id="other"></button>
+        <button class="amount-button_thirty" id="thirty" value="30"> $30</button>
+        <button class="amount-button_fifty" id="fifty" value="50"> $50</button>
+        <button class="amount-button_hundred" id="hundred" value="100"> $100 </button> 
+        <button class="amount-other">Other<input class="custom" type="text" name="amount" id="custom"></button>
         <p id="support" class="support"></p>
         </div>
             <div id="personal-info" class="personal-info">
