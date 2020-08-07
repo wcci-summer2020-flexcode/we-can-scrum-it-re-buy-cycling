@@ -38,7 +38,7 @@ export default function Header() {
         Support
       </h2>
       <ul>
-        <li class='nav-list_faq'>
+        <li class='nav-list_donate_bike'>
         Donate Bike </li>
         <li class='nav-list_donate_money'>
         Donate Money </li>

@@ -4,7 +4,6 @@ export default function navDonateMoney() {
     
     </div>
 	<div class="donation-container">
-
     <div class="volunteer-title">
     </div>
     <div class="donate-main">

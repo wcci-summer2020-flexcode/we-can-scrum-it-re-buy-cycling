@@ -9,6 +9,7 @@ import crud from "./crud/crud";
 import Bikes from "./components/Bikes";
 import Bike from "./components/Bike";
 import DonateMoney from "./components/DonateMoney";
+import DonateBike from "./components/DonateBike";
 import Volunteer from "./components/Volunteer";
 import Results from "./components/results";
 import navResults from "./components/results";
@@ -23,6 +24,7 @@ function buildPage() {
   navHome();
   navBikes();
   navDonateMoney();
+  navDonateBike();
 
   footer();
   footerHome();
@@ -30,6 +32,7 @@ function buildPage() {
   footerBikes();
   footerFAQ();
   footerDonateMoney();
+  footerDonateBike();
   footerVolunteer();
 
   bikesLink();
@@ -62,7 +65,12 @@ function navSupport() {
     } else if (event.target.classList.contains("nav-list_donate_money")) {
       const app = document.querySelector("#app");
       app.innerHTML = DonateMoney();
+
+    } else if (event.target.classList.contains("nav-list_donate_bike")) {
+      const app = document.querySelector("#app");
+      app.innerHTML = DonateBike();
       topFunction();
+
     } else if (event.target.classList.contains("nav-list_volunteer")) {
       const app = document.querySelector("#app");
       app.innerHTML = Volunteer();
@@ -73,6 +81,11 @@ function navSupport() {
           const app = document.querySelector("#app");
           app.innerHTML = Results();
           topFunction();
+        }
+        else if (event.target.classList.contains("volunteer-btn")) {
+          console.log("Hello!");
+          const app = document.querySelector("#app");
+          app.innerHTML = Results();
         }
       });
     }
@@ -146,6 +159,14 @@ function footerDonateMoney() {
     console.log("meow");
     app.innerHTML = DonateMoney();
     topFunction();
+  });
+}
+function footerDonateBike() {
+  const supportElm = document.querySelector(".footerDonateBike");
+  const app = document.querySelector("#app");
+  supportElm.addEventListener("click", () => {
+    console.log("meow");
+    app.innerHTML = DonateBike();
   });
 }
 
