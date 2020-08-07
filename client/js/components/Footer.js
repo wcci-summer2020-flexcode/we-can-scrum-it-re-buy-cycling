@@ -41,6 +41,7 @@ export default function Footer() {
         >
     </a>
 </ul>
+<br>
     <form>
         <p id="subscribe">
         </p>
@@ -58,12 +59,12 @@ export default function Footer() {
     <h3>Contact Us</h3>
     <a href="tel:"> 1.844.932.2626</a>
     <br>
-    <a href="mailto:rebuycycling@gmail.com">rebuycycling@gmail.com </a>
     <br>
-    
+    <a href="mailto:rebuycycling@gmail.com">rebuycycling@gmail.com </a>
+
+    <h3 class ="locationsText"> Locations: </h3>
     <p id="address"> 
     Columbus Store:
-    <br>
     1234 Main St<br>
         Columbus, OH 43026 </p>
     

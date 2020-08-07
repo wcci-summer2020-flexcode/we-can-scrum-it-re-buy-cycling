@@ -15,10 +15,8 @@
 
 .donation-container {
 	height: 550px;
-	width: 90%;
+	width: 100%;
 	font-size: 20px;
-	padding: 24px;
-	margin: 30px auto 30px auto;
 	background-color: beige;
 	border-style: solid;
 	border-color: #fe5f55;

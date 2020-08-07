@@ -143,3 +143,8 @@ section a:hover {
 #copyright {
   font-size: 12px;
 }
+
+.locationsText {
+  padding: 0;
+  margin: .75em;
+}

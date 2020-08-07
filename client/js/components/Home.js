@@ -11,7 +11,6 @@ import medicalMutual from "../../assets/sponsors/medical-mutual-logo.png";
 export default function home() {
   return `
   <header class="header"></header>
-  <div id="app">
     <div class="index_title">
     </div>
     
