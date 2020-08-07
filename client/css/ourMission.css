@@ -13,58 +13,74 @@
   margin-bottom: 1em;
 }
 
-#missionp1{
-  border: 3px black solid;
-  width: 70%;
-  border-radius: 20px/10px;
-  box-shadow: 6px 6px 0px black;
-  background-color: #fe5f55;
-  color: white;
-}
-#missionp2{
-  float: right;
-  border: 3px black solid;
-  width: 70%;
-  border-radius: 20px/10px;
-  box-shadow: 6px 6px 0px black;
-  background-color: #fe5f55;
-  color: white;
-}
-#missionp3{
+#missionp1 {
   float: left;
-  border: 3px black solid;
+  margin-left: 25px;
+  margin-top: 2em;
+  padding: 0.5em;
+  border: 1px black solid;
   width: 70%;
   border-radius: 20px/10px;
-  box-shadow: 6px 6px 0px black;
+  box-shadow: -10px -10px 0px black;
   background-color: #fe5f55;
   color: white;
 }
 
-.mission-image1{
+#missionp2 {
+  float: right;
+  margin-right: 25px;
+  padding: 0.5em;
+  border: 1px black solid;
+  width: 70%;
+  border-radius: 20px/10px;
+  box-shadow: 10px 0px 0px black;
+  background-color: #fe5f55;
+  color: white;
+}
+#missionp3 {
+  float: left;
+  margin-left: 25px;
+  padding: 0.5em;
+  border: 1px black solid;
+  width: 70%;
+  border-radius: 20px/10px;
+  box-shadow: -10px 10px 0px black;
+  background-color: #fe5f55;
+  color: white;
+  margin-bottom: 2em;
+}
+
+.mission-image1 {
   float: right;
   /* margin: 0px; */
   width: 250px;
-  margin-top: -150px;
-  margin-right: 100px;
-  border: 3px #fe5f55 solid;
- 
+  margin-right: 25px;
+  border-radius: 5%;
+  border: 1px black solid;
+  margin-top: 2em;
+  box-shadow: 10px -10px 0px #b8d8d8;
 }
-.mission-image2{
+
+.mission-image2 {
   float: left;
   width: 250px;
-  border: 3px #fe5f55 solid;
-  margin-top: 25px;
-  margin-left: 100px;
- 
+  margin-left: 25px;
+  border-radius: 5%;
+  border: 1px black solid;
+  box-shadow: -10px 0px 0px #b8d8d8;
+
+  margin-top: 1em;
 }
-.mission-image3{
+.mission-image3 {
   float: right;
-  margin: 10px;
+  /* margin: 0px; */
   width: 250px;
-  border: 3px #fe5f55 solid;
-  margin-top: 25px;
-  margin-right: 100px;
+  margin-right: 25px;
+  border-radius: 5%;
+  border: 1px black solid;
+  margin-top: 1em;
+  box-shadow: 10px 10px 0px #b8d8d8;
 }
-.missionbody{
+.missionbody {
   /* background-color: #b8d8d8; */
 }
