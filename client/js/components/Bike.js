@@ -1,6 +1,7 @@
 export default function Bike(bike) {
     return `
-    <div class="bikes_Title">
+  <div class="selectedBike_Title">
+  </div>
   
   </div>
    <div class="bike-container">
@@ -14,6 +15,11 @@ export default function Bike(bike) {
     </h3>
 
     <h3>
+    Bicycle Gender:
+    ${bike.gender.genderType}
+    </h3>
+    
+    <h3>
     Current Status:
     ${bike.currentStatus}
     </h3>
@@ -23,11 +29,6 @@ export default function Bike(bike) {
     <h3>
     Bicycle Type:
     ${bike.bicycleType}
-    </h3>
-
-    <h3>
-    Bicycle Gender:
-    ${bike.gender.genderType}
     </h3>
 
     <h3>

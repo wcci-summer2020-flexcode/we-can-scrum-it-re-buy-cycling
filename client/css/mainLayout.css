@@ -8,7 +8,7 @@ html {
   margin-right: auto;
 }
 
-body {
+body { /*changes footer size*/
   /*main background color*/
   width: 100%;
   background-image: url(../assets/backgroundCircles.png);
