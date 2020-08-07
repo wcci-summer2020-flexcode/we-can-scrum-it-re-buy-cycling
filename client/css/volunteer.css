@@ -14,32 +14,40 @@
 }
 
 .main{
-    background-color: #eef5d8;
-    width: 800px;
-    margin-left: 130px;
+    
+    height: 550px;
+	width: 90%;
+	font-size: 20px;
+	padding: 24px;
+	margin: 30px auto 30px auto;
+	background-color: beige;
+	border-style: solid;
+	border-color: #fe5f55;
     
     
 }
 form{
     padding: 10px;
+    
 }
 #volunteer{
-    display: inline;
+    display: inline-table;
     margin-right: 0em;
+    margin-left: -100px;
+   
 }
 .label{
-    display: inline-block;
+    display: inline-table;
     float: center;
     width: 10em;
     text-align: right;
-    margin-left: .5em;
+    margin-left: 1em;
+    margin-right: 20px;
 }
 
-/* #name{
-    width: 50%;
-    margin-left: .5em;
-    
-} */
+.form-div{
+    border-color: #fe5f55;
+}
 
 
 #weekdays{
@@ -56,5 +64,8 @@ form{
     width: 20em;
     height: 3em;
     background-color: #fe5f55; 
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
 }
 
