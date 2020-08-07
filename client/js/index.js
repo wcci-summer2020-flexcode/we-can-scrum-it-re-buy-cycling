@@ -76,24 +76,25 @@ function navDonateMoney() {
   supportElm.addEventListener("click", () => {
     app.innerHTML = DonateMoney();
 
-    //should give donation message and assign value for donation
+    //should give donation message AND assign value for donationAmount
     app.addEventListener("click", () => {
       if (event.target.classList.contains("amount-button_thirty")) {
-        const donationAmount = 30;
+        // var donationAmount = 30;
         support.innerHTML = "Purchases safety gear for one child.";
       } else if (event.target.classList.contains("amount-button_fifty")) {
-        const donationAmount = 50;
+        // var donationAmount = 50;
         support.innerHTML = "Restores two bikes for children in our community.";
       } else if (event.target.classList.contains("amount-button_hundred")) {
-        const donationAmount = 100;
+        // var donationAmount = 100;
         support.innerHTML = "Purchases two new bikes for the program.";
-      } else if (event.target.classList.contains("amount-other")) {
-        const donationAmount = document.getElementById("other");
+      } else if (event.target.classList.contains("custom")) {
+        // var donationAmount = document.getElementById("custom");
         support.innerHTML = "Thank you for supporting our little bikers!";
       }
     }, false);
 
-    //upon click of "donate" button, should pull user input from personal info along with donation value into modal
+
+    //Upon click of "donate" button, should pull user input from personal info along with donation value into modal
     app.addEventListener("click", () => {
       if (event.target.classList.contains("donate-button")) {
         var modal = document.getElementById("myModal");
@@ -101,8 +102,7 @@ function navDonateMoney() {
         var donationConfirmation = document.getElementById("confirmation");
         var personFirst = document.getElementById("firstName");
         var email = document.getElementById("email");
-        var donationAmount;
-        //FUNCTIONALITY FOR MODAL BOX
+        var donationAmount = document.getElementById("custom");//added this in because I could not get value to pull from above
 
         modal.style.display = "block";
 
@@ -120,7 +120,7 @@ function navDonateMoney() {
         donationConfirmation.innerHTML =
           personFirst.value +
           ", thank you for your donation of $" +
-          donationAmount +
+          donationAmount.value +
           ". For tax purposes, a gift receipt has been emailed to you at " +
           email.value +
           ".";

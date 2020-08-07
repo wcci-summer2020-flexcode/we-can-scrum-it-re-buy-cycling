@@ -8,7 +8,7 @@
     width: 1240px;
     background-color: #b8d8d8;
     padding: 30px;
-    margin-bottom: 30px;
+    margin: auto auto 30px auto;
 }
 
 .bike-page_image {
