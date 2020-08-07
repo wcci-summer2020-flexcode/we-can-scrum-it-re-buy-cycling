@@ -82,28 +82,27 @@ function navDonateMoney() {
     if (event.target.classList.contains("amount-button_thirty")) {
       var donationAmount = 30;
       support.innerHTML = "Purchases safety gear for one child.";
-    }
-    if (event.target.classList.contains("amount-button_fifty")) {
+    } else if (event.target.classList.contains("amount-button_fifty")) {
       var donationAmount = 50;
       support.innerHTML = "Restores two bikes for children in our community.";
-    }
-    if (event.target.classList.contains("amount-button_hundred")) {
+    } else if (event.target.classList.contains("amount-button_hundred")) {
       var donationAmount = 100;
       support.innerHTML = "Purchases two new bikes for the program.";
+    } else if (event.target.classList.contains("amount-other")) {
+      var donationAmount = document.getElementById("other");
+      support.innerHTML = "Thank you for supporting our little bikers!";
     }
+
+
     if (event.target.classList.contains("donate-button")) {
       var modal = document.getElementById("myModal");
       var span = document.getElementsByClassName("close")[0];
+
 
       //FORM VARIABLES
       var donationConfirmation = document.getElementById("confirmation");
       var personFirst = document.getElementById("firstName");
       var email = document.getElementById("email");
-      var donationAmount = document.getElementById("other");
-      var donationThirty = document.getElementById("thirty");
-      var donationFifty = document.getElementById("fifty");
-      var donationHundred = document.getElementById("hundred");
-      var donationOther = document.getElementById("other");
 
       //FUNCTIONALITY FOR MODAL BOX
 

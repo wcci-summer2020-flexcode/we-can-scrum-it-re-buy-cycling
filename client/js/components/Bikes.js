@@ -1,7 +1,8 @@
+import bikesheader from "../../assets/bikesTitle.png";
 export default function Bikes(bikes) {
   return `
   <div class="bikes_Title">
-    
+  
   </div>
 
     <div class="grid-container">

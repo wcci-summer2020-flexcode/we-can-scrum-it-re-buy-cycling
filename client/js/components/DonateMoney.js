@@ -12,14 +12,14 @@ export default function navDonateMoney() {
         <div class="donation-options">
         <button class="amount-button_thirty" id="thirty"> $30</button>
         <button class="amount-button_fifty" id="fifty"> $50</button>
-        <button class="amount-button_hundred" id="hundred"> $100 </button>
+        <button class="amount-button_hundred" id="hundred"> $100 </button> 
+        <button class="amount-other">Other<input class="set-amount" type="text" name="amount" id="other"></button>
         <p id="support" class="support"></p>
         </div>
             <div id="personal-info" class="personal-info">
-                <label class="personal-info_label">Donation Amount</label>
-				<input class="set-amount" type="text" name="amount" id="other"><br>
-                <label class="personal-info_label">First Name
-                <input class="firstname" type="text" name="first_name" id="firstName"></label><br>
+               
+                <label class="personal-info_label">First Name</label>
+                <input class="firstname" type="text" name="first_name" id="firstName"><br>
                 <label class="personal-info_label">Last Name</label>
                 <input class="lastname" type="text" name="last_name" id="lastName"><br>
                 <label class="personal-info_label">Address</label>

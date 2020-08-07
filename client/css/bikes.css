@@ -1,14 +1,28 @@
+.bikes_Title {
+  background-image: url(../assets/bikesTitle.png);
+  background-size: 100%;
+  background-repeat: none;
+  background-position: center;
+  width: 1250px;
+  border-style: solid;
+  border-color: #4f6367;
+  border-width: 0.1em;
+  height: 100px;
+  padding: 1em;
+  padding: white;
+  margin-bottom: 1em;
+}
+
 .grid-container {
   width: 1300px;
-  background-color: #eef5db;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   grid-template-areas: "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list" "sidebar bikes-list bikes-list bikes-list bikes-list";
-  border-color: #fe5f55;
+  /* border-color: #fe5f55;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
   padding-right: 1em;
 }
 
@@ -20,26 +34,29 @@
   gap: 1px 1px;
   grid-template-areas: "CheckBoxSection" "BLANK";
   grid-area: sidebar;
-  border-color: #fe5f55;
+  /* border-color: #fe5f55; 
   border-style: solid;
   border-width: 1px;
   border-top: none;
   border-left: none;
-  border-bottom: none;
+  border-bottom: none; */
 }
 
 .CheckBoxSection {
   /* display: grid;  */
   align-items: flex-start;
-  /* background-color: aquamarine; */
-  background-color: EEF5DB;
+  height: 35em;
+  background-color: #eef5db;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fe5f55;
   grid-area: CheckBoxSection;
   grid-template-columns: 1fr;
   gap: 1px 1px;
   grid-template-areas: ".";
   text-align: left;
   padding: 1em;
-  border-bottom: none;
+  margin-top: 25px;
 }
 
 .CheckBoxSection h2 {
@@ -59,7 +76,7 @@
 
 .bikes-list {
   display: grid;
-  background-color: #eef5db;
+  /* background-color: #eef5db; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
@@ -67,6 +84,9 @@
   grid-area: bikes-list;
   font-size: x-large;
   list-style-type: none;
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: #fe5f55; */
 }
 
 .bikes-list p{
@@ -84,6 +104,7 @@
   border-top: none;
 }
 .bike_item {
+  background-color: #eef5db;
   border-color: #fe5f55;
   border-style: solid;
   border-width: 1px;

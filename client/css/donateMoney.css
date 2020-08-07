@@ -14,7 +14,7 @@
   }
 
 .donation-container {
-	height: 500px;
+	height: 550px;
 	width: 90%;
 	font-size: 20px;
 	padding: 24px;
@@ -75,13 +75,44 @@
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
     border-image: initial;
 }
+.amount-other{
+	font-size: 1.5em;
+	width: 15em;
+    height: 3em;
+	font-weight: bold;
+    background-color: #fe5f55;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+	margin-top: 8px;
+	cursor: pointer;
+	padding: 1px 6px;
+    border-width: 2px;
+	border-style: outset;
+	border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+.set-amount{
+	border-radius: 5px;
+	margin-left: 10px;
+	font-size: .7em;
+	height: 2.9em;
+	padding-left: 10px;
+}
 .support{
 	font-size: 1.25em;
 	font-weight: bold;
 }
 .personal-info{
-
-	padding: 10px;
+	margin: 10px;
+}
+.personal-info_label{
+	display: inline-block;
+    float: center;
+    width: 10em;
+    text-align: right;
+	margin-left: .5em;
+	padding: 5px;
 }
 .donation-box {
 	text-align: center;
