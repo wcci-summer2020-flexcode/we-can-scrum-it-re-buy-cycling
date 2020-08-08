@@ -1,6 +1,6 @@
 export default function navDonateBike() {
   return `
-  <div class="donateMoney_Title">
+  <div class="donateBike_Title">
     
   </div>
 <div class="donation-container">
@@ -10,32 +10,22 @@ export default function navDonateBike() {
       <form name="donation form" id="donate_frm" action="#">
           
           <div id="personal-info" class="personal-info"> 
-          <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter username" />
-        
-        </div>
-        <div class="form-control">
-          <label for="email">Email Address</label>
-          <input type="text" id="email" placeholder="Enter email" />
-         
-        </div>
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password" />
-        
-        </div>
-        <div class="form-control">
-          <label for="password2">Confirm Password</label>
-          <input
-            type="password"
-            id="password2"
-            placeholder="Enter password again"
+          
+          <label class="personal-info_label">Username</label>
+          <input class="username" type="text" name="user_name" id="username" placeholder="Enter username"><br>
+          
+          <label class="personal-info_label">Email Address</label>
+          <input class="emailAddress" type="text" name="email_address" id="emailAddress" placeholder="Enter email address"><br>      
 
+          <label class="personal-info_label">Password</label>
+          <input class="password" type="text" name="password" id="password" placeholder="Enter password"><br> 
+
+          <label class="personal-info_label">Confirm Password</label>
+          <input class="confirmPassword" type="text" name="confirm_password" id="confirmPassword" placeholder="Confirm password"><br> 
 
           </div>
 
-          <button class="donate-bike-button" id="myBtn"> Donate Now</button>
+          <button class="donate-bike-button" id="donate-bike-button"> Donate Now</button>
             
           <div id="myModal" class="modal">
         <div class="modal-content">
