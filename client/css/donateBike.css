@@ -1,5 +1,5 @@
 .donateBike_Title {
-    background-image: url(../assets/);
+    background-image: url(../assets/donateABikeTitle.png);
     background-size: 100%;
     background-repeat: none;
     background-position: center;
@@ -12,3 +12,24 @@
     padding: white;
     margin-bottom: 1em;
   }
+  .confirmPassword  {
+    visibility: visible;
+  }
+  .donate-bike-button{
+    font-size: 1.5em;
+	width: 20em;
+    height: 3em;
+	background-color: #fe5f55;
+	cursor: pointer;
+	font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+	margin-top: 8px;
+	padding: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+  }
+  
