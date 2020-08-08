@@ -20,7 +20,6 @@ export default function navDonateBike() {
               <label class="personal-info_label">Confirm Password</label>
               <input class="password2" type="text" name="password2" id="password2"><br>
 
-
           </div>
 
           <button class="donate-bike-button" id="myBtn"> Donate Now</button>

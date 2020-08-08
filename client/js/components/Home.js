@@ -15,12 +15,12 @@ export default function home() {
     </div>
     
     <div class="howItWorks">
-      <span class="donateABikeLink">
+      <div class="donateABikeLink2">
 
-      </span>
-      <span class="bikesLink">
+      </div>
+      <div class="bikesLink2">
 
-      </span>
+      </div>
     </div>
     <div class="sponsors">
       <h2> Thank you to our sponsors!</h2>

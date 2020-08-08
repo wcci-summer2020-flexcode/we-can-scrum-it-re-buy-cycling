@@ -26,7 +26,6 @@ function buildPage() {
   navHome();
   navBikes();
   navDonateMoney();
-  navDonateBike();
 
   footer();
   footerHome();
@@ -36,11 +35,10 @@ function buildPage() {
   footerDonateMoney();
   footerDonateBike();
   footerVolunteer();
-
+  donateABikeLink();
   bikesLink();
   checkAlert();
   navResults();
-  navResults2();
   topFunction();
 }
 
@@ -277,6 +275,16 @@ function navBikes() {
     topFunction();
   });
 }
+
+function donateABikeLink(){
+  const bikeElm3 = document.querySelector(".donateABikeLink");
+  bikeElm3.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = DonateBike();
+    });
+    topFunction();
+}
+
 function bikesLink() {
   const bikeElm2 = document.querySelector(".bikesLink");
   bikeElm2.addEventListener("click", () => {
@@ -288,6 +296,7 @@ function bikesLink() {
     topFunction();
   });
 }
+
 
 function footerBikes() {
   const bikeElm3 = document.querySelector(".footerBikes");
