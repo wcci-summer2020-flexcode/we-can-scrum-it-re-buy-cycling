@@ -20,8 +20,10 @@ export default function navDonateBike() {
           <label class="personal-info_label">Password</label>
           <input class="password" type="text" name="password" id="password" placeholder="Enter password"><br> 
 
+
           <label class="personal-info_label">Confirm Password</label>
           <input class="confirmPassword" type="text" name="confirm_password" id="confirmPassword" placeholder="Confirm password"><br> 
+
 
           </div>
 
